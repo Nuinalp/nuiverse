@@ -1,0 +1,3537 @@
+/**
+* Copyright (c) 2018 The Nuinalp Authors. All rights reserved.
+* Use of this source code is governed by a BSD-style license that can be
+* found in the LICENSE file.
+*/
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  box-sizing: border-box; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: middle;
+  background: transparent; }
+
+/* line 21, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 26, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+body {
+  line-height: 1.5; }
+
+/* line 31, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 39, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 45, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+:focus {
+  outline: 0; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+ins {
+  text-decoration: none; }
+
+/* line 53, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 57, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+table, tbody, tfoot, thead, tr, th, td {
+  vertical-align: top; }
+
+/* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+img {
+  vertical-align: middle;
+  border-style: none; }
+
+/* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+textarea {
+  overflow: auto;
+  resize: vertical; }
+
+/* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+a {
+  color: #0070c0;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+  /* line 88, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+  a:hover {
+    color: #0064a2;
+    text-decoration: underline; }
+
+/* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+output {
+  display: inline-block; }
+
+/* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+summary {
+  display: list-item;
+  cursor: pointer; }
+
+/* line 108, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+template {
+  display: none; }
+
+/* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+[hidden] {
+  display: none !important; }
+
+/* line 123, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+label {
+  display: inline-block;
+  margin-bottom: 12px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+input[type=text], input[type=file], input[type=email], input[type=password], select, textarea {
+  border-radius: 20px;
+  border: 1px solid #c1c1c1;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.15;
+  transition: all ease 500ms;
+  margin-bottom: 4px;
+  display: inline-block; }
+  /* line 141, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+  input[type=text]:focus, input[type=file]:focus, input[type=email]:focus, input[type=password]:focus, select:focus, textarea:focus {
+    border-color: #0070c0;
+    color: #0070c0;
+    box-shadow: 0 0 3px 0px rgba(0, 112, 192, 0.5); }
+
+/* line 149, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+input, button, select, optgroup, textarea {
+  font-family: inherit; }
+
+/* line 155, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+button, input {
+  overflow: visible; }
+
+/* line 159, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+button, select {
+  text-transform: none; }
+
+/* line 163, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+button:hover {
+  background-color: #fafafa; }
+
+/* line 171, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_reset.scss */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #7f7f7f;
+  opacity: 0.5; }
+
+@keyframes click {
+  0% {
+    transform: scale(0.8); }
+  50% {
+    transform: scale(0.9); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes fxclick {
+  0% {
+    width: 0%;
+    height: 0%;
+    filter: blur(11px);
+    opacity: 0.5; }
+  100% {
+    width: 200%;
+    height: 200%;
+    filter: blur(11px);
+    opacity: 0.5; } }
+
+@keyframes fxhover {
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9; }
+  50% {
+    width: 200%;
+    height: 200%;
+    opacity: 0.9; }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9; } }
+
+@keyframes progressbarAnim {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: -15rem 0; } }
+
+@keyframes loadingProgressbar {
+  0% {
+    transform: translateX(-89%); }
+  50% {
+    transform: translateX(189%); }
+  100% {
+    transform: translateX(-89%); } }
+
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/mixins/utils-global.scss */
+.obj-br-n, .btn-group .btn:not(:first-child):not(:last-child), .btn-group-vertical .btn:not(:first-child):not(:last-child), .progress-bar:not(:first-child):not(:last-child) {
+  border-radius: 0 !important; }
+
+/* line 5, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/mixins/utils-global.scss */
+.obj-nosd {
+  box-shadow: none !important; }
+
+/* line 9, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/mixins/utils-global.scss */
+.obj-br-m {
+  border-radius: 8px !important; }
+
+/* line 13, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/mixins/utils-global.scss */
+.size-sm, .btn-group-sm .btn, .input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .form-control {
+  padding: 4px 8px !important;
+  font-size: 12px !important; }
+
+/* line 18, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/mixins/utils-global.scss */
+.size-lg, .btn-group-lg .btn, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .form-control {
+  padding: 14px 16px !important;
+  font-size: 18px !important; }
+
+/* line 23, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/mixins/utils-global.scss */
+.btn, .badge, .cards, .alert {
+  box-shadow: 0 1px 3pt 0.5px rgba(0, 0, 0, 0.3); }
+
+/* line 20, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/mixins/buttons.scss */
+.btn::before {
+  content: ' ';
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 0; }
+
+/* line 67, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/mixins/buttons.scss */
+.btn, .badge {
+  font-weight: 14px;
+  line-height: 1.15; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-justify {
+  text-align: justify !important; }
+
+/* line 8, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-nowrap {
+  white-space: nowrap !important; }
+
+/* line 11, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-left {
+  text-align: left !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-right {
+  text-align: right !important; }
+
+/* line 13, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-center {
+  text-align: center !important; }
+
+/* line 17, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-lowercase {
+  text-transform: lowercase !important; }
+
+/* line 18, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-uppercase {
+  text-transform: uppercase !important; }
+
+/* line 19, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-capitalize {
+  text-transform: capitalize !important; }
+
+/* line 26, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.font-italic {
+  font-style: italic !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-default, .text-default * {
+  color: #7f7f7f !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-primary, .text-primary * {
+  color: #0070c0 !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-secondary, .text-secondary * {
+  color: #4a8ecb !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-danger, .text-danger * {
+  color: #e23e32 !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-info, .text-info * {
+  color: #7f7f7f !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-warning, .text-warning * {
+  color: #ff9800 !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-success, .text-success * {
+  color: #70ad47 !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-selected, .text-selected * {
+  color: white !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-link, .text-link * {
+  color: white !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-dark, .text-dark * {
+  color: #282828 !important; }
+
+/* line 29, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-white, .text-white * {
+  color: white !important; }
+
+/* line 34, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_text.scss */
+.text-muted {
+  color: #7f7f7f !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-default {
+  background: linear-gradient(to bottom, #666666, #999999) !important;
+  border-color: #7f7f7f !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-default {
+  background: linear-gradient(to bottom, #7f7f7f, #666666, #999999) !important;
+  border-color: #7f7f7f !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-default {
+  background: #7f7f7f !important;
+  border-color: #7f7f7f !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-primary {
+  background: linear-gradient(to bottom, #00528d, #008ef3) !important;
+  border-color: #0070c0 !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-primary {
+  background: linear-gradient(to bottom, #0070c0, #00528d, #008ef3) !important;
+  border-color: #0070c0 !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-primary {
+  background: #0070c0 !important;
+  border-color: #0070c0 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-secondary {
+  background: linear-gradient(to bottom, #3274b0, #72a7d6) !important;
+  border-color: #4a8ecb !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-secondary {
+  background: linear-gradient(to bottom, #4a8ecb, #3274b0, #72a7d6) !important;
+  border-color: #4a8ecb !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-secondary {
+  background: #4a8ecb !important;
+  border-color: #4a8ecb !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-danger {
+  background: linear-gradient(to bottom, #c5271c, #e8685f) !important;
+  border-color: #e23e32 !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-danger {
+  background: linear-gradient(to bottom, #e23e32, #c5271c, #e8685f) !important;
+  border-color: #e23e32 !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-danger {
+  background: #e23e32 !important;
+  border-color: #e23e32 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-info {
+  background: linear-gradient(to bottom, #666666, #999999) !important;
+  border-color: #7f7f7f !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-info {
+  background: linear-gradient(to bottom, #7f7f7f, #666666, #999999) !important;
+  border-color: #7f7f7f !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-info {
+  background: #7f7f7f !important;
+  border-color: #7f7f7f !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-warning {
+  background: linear-gradient(to bottom, #cc7a00, #ffad33) !important;
+  border-color: #ff9800 !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-warning {
+  background: linear-gradient(to bottom, #ff9800, #cc7a00, #ffad33) !important;
+  border-color: #ff9800 !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-warning {
+  background: #ff9800 !important;
+  border-color: #ff9800 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-success {
+  background: linear-gradient(to bottom, #598938, #8bc067) !important;
+  border-color: #70ad47 !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-success {
+  background: linear-gradient(to bottom, #70ad47, #598938, #8bc067) !important;
+  border-color: #70ad47 !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-success {
+  background: #70ad47 !important;
+  border-color: #70ad47 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-selected {
+  background: linear-gradient(to bottom, #e6e6e6, white) !important;
+  border-color: white !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-selected {
+  background: linear-gradient(to bottom, white, #e6e6e6, white) !important;
+  border-color: white !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-selected {
+  background: white !important;
+  border-color: white !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-link {
+  background: linear-gradient(to bottom, #e6e6e6, white) !important;
+  border-color: white !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-link {
+  background: linear-gradient(to bottom, white, #e6e6e6, white) !important;
+  border-color: white !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-link {
+  background: white !important;
+  border-color: white !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-dark {
+  background: linear-gradient(to bottom, #0f0f0f, #424242) !important;
+  border-color: #282828 !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-dark {
+  background: linear-gradient(to bottom, #282828, #0f0f0f, #424242) !important;
+  border-color: #282828 !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-dark {
+  background: #282828 !important;
+  border-color: #282828 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-white {
+  background: linear-gradient(to bottom, #e6e6e6, white) !important;
+  border-color: white !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-3d-white {
+  background: linear-gradient(to bottom, white, #e6e6e6, white) !important;
+  border-color: white !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-flat-white {
+  background: white !important;
+  border-color: white !important; }
+
+/* line 19, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_background.scss */
+.bkg-transparent {
+  background: transparent !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-default {
+  border-color: #7f7f7f !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-primary {
+  border-color: #0070c0 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-secondary {
+  border-color: #4a8ecb !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-danger {
+  border-color: #e23e32 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-info {
+  border-color: #7f7f7f !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-warning {
+  border-color: #ff9800 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-success {
+  border-color: #70ad47 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-selected {
+  border-color: white !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-link {
+  border-color: white !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-dark {
+  border-color: #282828 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-white {
+  border-color: white !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.border-transparent {
+  border-color: transparent !important; }
+
+/* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_borders.scss */
+.fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-0 {
+  width: 0% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-0 {
+  height: 0% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-5 {
+  width: 5% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-5 {
+  height: 5% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-10 {
+  width: 10% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-10 {
+  height: 10% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-15 {
+  width: 15% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-15 {
+  height: 15% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-20 {
+  width: 20% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-20 {
+  height: 20% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-25 {
+  width: 25% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-25 {
+  height: 25% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-30 {
+  width: 30% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-30 {
+  height: 30% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-35 {
+  width: 35% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-35 {
+  height: 35% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-40 {
+  width: 40% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-40 {
+  height: 40% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-45 {
+  width: 45% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-45 {
+  height: 45% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-50 {
+  width: 50% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-50 {
+  height: 50% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-55 {
+  width: 55% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-55 {
+  height: 55% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-60 {
+  width: 60% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-60 {
+  height: 60% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-65 {
+  width: 65% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-65 {
+  height: 65% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-70 {
+  width: 70% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-70 {
+  height: 70% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-75 {
+  width: 75% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-75 {
+  height: 75% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-80 {
+  width: 80% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-80 {
+  height: 80% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-85 {
+  width: 85% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-85 {
+  height: 85% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-90 {
+  width: 90% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-90 {
+  height: 90% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-95 {
+  width: 95% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-95 {
+  height: 95% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-100 {
+  width: 100% !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-100 {
+  height: 100% !important; }
+
+/* line 2, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.w-auto {
+  width: auto !important; }
+
+/* line 3, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.h-auto {
+  height: auto !important; }
+
+/* line 6, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.mw-100 {
+  max-width: 100% !important; }
+
+/* line 7, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/utils/_size-engine.scss */
+.mh-100 {
+  max-height: 100% !important; }
+
+/* line 23, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_global-settings.scss */
+.obj-bd-n {
+  border: 0 !important; }
+
+/* line 4, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  background-color: #7f7f7f;
+  border: 1px solid #7f7f7f;
+  color: white;
+  cursor: default;
+  margin: 0 4px 4px 0;
+  padding: 12px 14px;
+  line-height: 1.15;
+  font-size: 14px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all ease 200ms; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn:hover {
+    background: white;
+    color: #404040; }
+  /* line 41, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn.disabled, .btn:disabled {
+    cursor: not-allowed; }
+  /* line 45, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn span {
+    z-index: 2;
+    position: relative;
+    cursor: default; }
+  /* line 51, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn:active {
+    transform: scale(0.8); }
+  /* line 55, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn:not(:active) {
+    transform: scale(1); }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-circle, .btn-outline-circle {
+  border-radius: 100%;
+  height: 90px;
+  width: 90px;
+  padding: 12px 0; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-default {
+  background: linear-gradient(to bottom, #7f7f7f, #666666, #999999) ;
+  border: 1px solid #7f7f7f; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-default.disabled, .btn-3d-default:disabled {
+    background: linear-gradient(to bottom, #7f7f7f, #cccccc, #b2b2b2) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-default {
+  background: #7f7f7f ;
+  border: 1px solid #7f7f7f; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-default.disabled, .btn-flat-default:disabled {
+    background: #b2b2b2 ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-default {
+  border: 1px solid #7f7f7f;
+  background: linear-gradient(to bottom, #666666, #999999) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-default.disabled, .btn-default:disabled {
+    background: linear-gradient(to bottom, #b2b2b2, #cccccc) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-default:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #7f7f7f;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-default:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-default:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-default:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-default, .btn-outline-circle.btn-default {
+  border: 1px solid #7f7f7f;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #7f7f7f; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-default:after, .btn-outline-circle.btn-default:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #7f7f7f;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-default:not(:active):hover::after, .btn-outline-circle.btn-default:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-default:active:hover::after, .btn-outline-circle.btn-default:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-default:hover:after, .btn-outline-circle.btn-default:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-default span, .btn-outline-circle.btn-default span {
+    color: #7f7f7f; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-primary {
+  background: linear-gradient(to bottom, #0070c0, #00528d, #008ef3) ;
+  border: 1px solid #0070c0; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-primary.disabled, .btn-3d-primary:disabled {
+    background: linear-gradient(to bottom, #0070c0, #5abaff, #27a5ff) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-primary {
+  background: #0070c0 ;
+  border: 1px solid #0070c0; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-primary.disabled, .btn-flat-primary:disabled {
+    background: #27a5ff ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-primary {
+  border: 1px solid #0070c0;
+  background: linear-gradient(to bottom, #00528d, #008ef3) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-primary.disabled, .btn-primary:disabled {
+    background: linear-gradient(to bottom, #27a5ff, #5abaff) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-primary:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #0070c0;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-primary:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-primary:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-primary:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-primary, .btn-outline-circle.btn-primary {
+  border: 1px solid #0070c0;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #0070c0; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-primary:after, .btn-outline-circle.btn-primary:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #0070c0;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-primary:not(:active):hover::after, .btn-outline-circle.btn-primary:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-primary:active:hover::after, .btn-outline-circle.btn-primary:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-primary:hover:after, .btn-outline-circle.btn-primary:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-primary span, .btn-outline-circle.btn-primary span {
+    color: #0070c0; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-secondary {
+  background: linear-gradient(to bottom, #4a8ecb, #3274b0, #72a7d6) ;
+  border: 1px solid #4a8ecb; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-secondary.disabled, .btn-3d-secondary:disabled {
+    background: linear-gradient(to bottom, #4a8ecb, #c1d8ed, #99bfe2) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-secondary {
+  background: #4a8ecb ;
+  border: 1px solid #4a8ecb; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-secondary.disabled, .btn-flat-secondary:disabled {
+    background: #99bfe2 ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-secondary {
+  border: 1px solid #4a8ecb;
+  background: linear-gradient(to bottom, #3274b0, #72a7d6) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-secondary.disabled, .btn-secondary:disabled {
+    background: linear-gradient(to bottom, #99bfe2, #c1d8ed) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-secondary:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #4a8ecb;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-secondary:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-secondary:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-secondary:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-secondary, .btn-outline-circle.btn-secondary {
+  border: 1px solid #4a8ecb;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #4a8ecb; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-secondary:after, .btn-outline-circle.btn-secondary:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #4a8ecb;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-secondary:not(:active):hover::after, .btn-outline-circle.btn-secondary:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-secondary:active:hover::after, .btn-outline-circle.btn-secondary:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-secondary:hover:after, .btn-outline-circle.btn-secondary:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-secondary span, .btn-outline-circle.btn-secondary span {
+    color: #4a8ecb; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-danger {
+  background: linear-gradient(to bottom, #e23e32, #c5271c, #e8685f) ;
+  border: 1px solid #e23e32; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-danger.disabled, .btn-3d-danger:disabled {
+    background: linear-gradient(to bottom, #e23e32, #f5bcb8, #ef928b) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-danger {
+  background: #e23e32 ;
+  border: 1px solid #e23e32; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-danger.disabled, .btn-flat-danger:disabled {
+    background: #ef928b ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-danger {
+  border: 1px solid #e23e32;
+  background: linear-gradient(to bottom, #c5271c, #e8685f) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-danger.disabled, .btn-danger:disabled {
+    background: linear-gradient(to bottom, #ef928b, #f5bcb8) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-danger:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #e23e32;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-danger:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-danger:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-danger:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-danger, .btn-outline-circle.btn-danger {
+  border: 1px solid #e23e32;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #e23e32; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-danger:after, .btn-outline-circle.btn-danger:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #e23e32;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-danger:not(:active):hover::after, .btn-outline-circle.btn-danger:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-danger:active:hover::after, .btn-outline-circle.btn-danger:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-danger:hover:after, .btn-outline-circle.btn-danger:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-danger span, .btn-outline-circle.btn-danger span {
+    color: #e23e32; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-info {
+  background: linear-gradient(to bottom, #7f7f7f, #666666, #999999) ;
+  border: 1px solid #7f7f7f; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-info.disabled, .btn-3d-info:disabled {
+    background: linear-gradient(to bottom, #7f7f7f, #cccccc, #b2b2b2) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-info {
+  background: #7f7f7f ;
+  border: 1px solid #7f7f7f; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-info.disabled, .btn-flat-info:disabled {
+    background: #b2b2b2 ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-info {
+  border: 1px solid #7f7f7f;
+  background: linear-gradient(to bottom, #666666, #999999) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-info.disabled, .btn-info:disabled {
+    background: linear-gradient(to bottom, #b2b2b2, #cccccc) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-info:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #7f7f7f;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-info:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-info:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-info:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-info, .btn-outline-circle.btn-info {
+  border: 1px solid #7f7f7f;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #7f7f7f; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-info:after, .btn-outline-circle.btn-info:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #7f7f7f;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-info:not(:active):hover::after, .btn-outline-circle.btn-info:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-info:active:hover::after, .btn-outline-circle.btn-info:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-info:hover:after, .btn-outline-circle.btn-info:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-info span, .btn-outline-circle.btn-info span {
+    color: #7f7f7f; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-warning {
+  background: linear-gradient(to bottom, #ff9800, #cc7a00, #ffad33) ;
+  border: 1px solid #ff9800; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-warning.disabled, .btn-3d-warning:disabled {
+    background: linear-gradient(to bottom, #ff9800, #ffd699, #ffc166) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-warning {
+  background: #ff9800 ;
+  border: 1px solid #ff9800; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-warning.disabled, .btn-flat-warning:disabled {
+    background: #ffc166 ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-warning {
+  border: 1px solid #ff9800;
+  background: linear-gradient(to bottom, #cc7a00, #ffad33) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-warning.disabled, .btn-warning:disabled {
+    background: linear-gradient(to bottom, #ffc166, #ffd699) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-warning:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #ff9800;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-warning:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-warning:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-warning:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-warning, .btn-outline-circle.btn-warning {
+  border: 1px solid #ff9800;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #ff9800; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-warning:after, .btn-outline-circle.btn-warning:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #ff9800;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-warning:not(:active):hover::after, .btn-outline-circle.btn-warning:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-warning:active:hover::after, .btn-outline-circle.btn-warning:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-warning:hover:after, .btn-outline-circle.btn-warning:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-warning span, .btn-outline-circle.btn-warning span {
+    color: #ff9800; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-success {
+  background: linear-gradient(to bottom, #70ad47, #598938, #8bc067) ;
+  border: 1px solid #70ad47; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-success.disabled, .btn-3d-success:disabled {
+    background: linear-gradient(to bottom, #70ad47, #c2deaf, #a6cf8b) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-success {
+  background: #70ad47 ;
+  border: 1px solid #70ad47; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-success.disabled, .btn-flat-success:disabled {
+    background: #a6cf8b ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-success {
+  border: 1px solid #70ad47;
+  background: linear-gradient(to bottom, #598938, #8bc067) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-success.disabled, .btn-success:disabled {
+    background: linear-gradient(to bottom, #a6cf8b, #c2deaf) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-success:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #70ad47;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-success:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-success:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-success:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-success, .btn-outline-circle.btn-success {
+  border: 1px solid #70ad47;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #70ad47; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-success:after, .btn-outline-circle.btn-success:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #70ad47;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-success:not(:active):hover::after, .btn-outline-circle.btn-success:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-success:active:hover::after, .btn-outline-circle.btn-success:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-success:hover:after, .btn-outline-circle.btn-success:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-success span, .btn-outline-circle.btn-success span {
+    color: #70ad47; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-selected {
+  background: linear-gradient(to bottom, white, #e6e6e6, white) ;
+  border: 1px solid white; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-selected.disabled, .btn-3d-selected:disabled {
+    background: linear-gradient(to bottom, white, white, white) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-selected {
+  background: white ;
+  border: 1px solid white; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-selected.disabled, .btn-flat-selected:disabled {
+    background: white ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-selected {
+  border: 1px solid white;
+  background: linear-gradient(to bottom, #e6e6e6, white) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-selected.disabled, .btn-selected:disabled {
+    background: linear-gradient(to bottom, white, white) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-selected:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid white;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-selected:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-selected:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-selected:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-selected, .btn-outline-circle.btn-selected {
+  border: 1px solid white;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: white; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-selected:after, .btn-outline-circle.btn-selected:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid white;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-selected:not(:active):hover::after, .btn-outline-circle.btn-selected:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-selected:active:hover::after, .btn-outline-circle.btn-selected:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-selected:hover:after, .btn-outline-circle.btn-selected:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-selected span, .btn-outline-circle.btn-selected span {
+    color: white; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-link {
+  background: linear-gradient(to bottom, white, #e6e6e6, white) ;
+  border: 1px solid white; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-link.disabled, .btn-3d-link:disabled {
+    background: linear-gradient(to bottom, white, white, white) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-link {
+  background: white ;
+  border: 1px solid white; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-link.disabled, .btn-flat-link:disabled {
+    background: white ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-link {
+  border: 1px solid white;
+  background: linear-gradient(to bottom, #e6e6e6, white) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-link.disabled, .btn-link:disabled {
+    background: linear-gradient(to bottom, white, white) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-link:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid white;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-link:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-link:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-link:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 120, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-link:hover span {
+    text-decoration: underline; }
+  /* line 123, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-link span {
+    color: #404040; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-link, .btn-outline-circle.btn-link {
+  border: 1px solid white;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: white; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-link:after, .btn-outline-circle.btn-link:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid white;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-link:not(:active):hover::after, .btn-outline-circle.btn-link:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-link:active:hover::after, .btn-outline-circle.btn-link:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-link:hover:after, .btn-outline-circle.btn-link:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-link span, .btn-outline-circle.btn-link span {
+    color: white; }
+  /* line 165, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-link:hover span, .btn-outline-circle.btn-link:hover span {
+    text-decoration: underline; }
+  /* line 168, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-link span, .btn-outline-circle.btn-link span {
+    color: #404040; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-dark {
+  background: linear-gradient(to bottom, #282828, #0f0f0f, #424242) ;
+  border: 1px solid #282828; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-dark.disabled, .btn-3d-dark:disabled {
+    background: linear-gradient(to bottom, #282828, #757575, #5b5b5b) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-dark {
+  background: #282828 ;
+  border: 1px solid #282828; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-dark.disabled, .btn-flat-dark:disabled {
+    background: #5b5b5b ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-dark {
+  border: 1px solid #282828;
+  background: linear-gradient(to bottom, #0f0f0f, #424242) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-dark.disabled, .btn-dark:disabled {
+    background: linear-gradient(to bottom, #5b5b5b, #757575) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-dark:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #282828;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-dark:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-dark:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-dark:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 128, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-dark:hover span {
+    color: #282828; }
+  /* line 131, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-dark span {
+    color: white; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-dark, .btn-outline-circle.btn-dark {
+  border: 1px solid #282828;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #282828; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-dark:after, .btn-outline-circle.btn-dark:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid #282828;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-dark:not(:active):hover::after, .btn-outline-circle.btn-dark:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-dark:active:hover::after, .btn-outline-circle.btn-dark:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-dark:hover:after, .btn-outline-circle.btn-dark:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-dark span, .btn-outline-circle.btn-dark span {
+    color: #282828; }
+  /* line 173, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-dark:hover span, .btn-outline-circle.btn-dark:hover span {
+    color: #282828; }
+  /* line 176, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-dark span, .btn-outline-circle.btn-dark span {
+    color: #282828; }
+
+/* line 73, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-3d-white {
+  background: linear-gradient(to bottom, white, #e6e6e6, white) ;
+  border: 1px solid white; }
+  /* line 77, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-3d-white.disabled, .btn-3d-white:disabled {
+    background: linear-gradient(to bottom, white, white, white) ;
+    color: white; }
+
+/* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-flat-white {
+  background: white ;
+  border: 1px solid white; }
+  /* line 87, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-flat-white.disabled, .btn-flat-white:disabled {
+    background: white ;
+    color: white; }
+
+/* line 93, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-white {
+  border: 1px solid white;
+  background: linear-gradient(to bottom, #e6e6e6, white) ; }
+  /* line 98, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-white.disabled, .btn-white:disabled {
+    background: linear-gradient(to bottom, white, white) ;
+    color: white; }
+  /* line 103, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-white:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid white;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-white:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-white:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-white:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-outline-white, .btn-outline-circle.btn-white {
+  border: 1px solid white;
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: white; }
+  /* line 144, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-white:after, .btn-outline-circle.btn-white:after {
+    content: ' ';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 20px solid white;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 860ms;
+    filter: blur(11px);
+    opacity: 1;
+    transition-property: width, height;
+    transition-delay: 50ms, 50ms; }
+  /* line 148, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-white:not(:active):hover::after, .btn-outline-circle.btn-white:not(:active):hover::after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 152, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-white:active:hover::after, .btn-outline-circle.btn-white:active:hover::after {
+    -webkit-animation: fxclick 700ms ease-out;
+    /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out; }
+  /* line 156, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-white:hover:after, .btn-outline-circle.btn-white:hover:after {
+    -webkit-animation: fxclick 2.6s ease-out infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite; }
+  /* line 160, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-outline-white span, .btn-outline-circle.btn-white span {
+    color: white; }
+
+/* line 184, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-group {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+  /* line 189, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-group .btn {
+    margin: 0 -1px 4px 0; }
+  /* line 196, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-group .btn:first-child:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  /* line 200, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-group .btn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+
+/* line 206, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-group-vertical {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  /* line 225, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-group-vertical .btn {
+    margin: 0 0 -1px 0;
+    width: 100%;
+    display: block; }
+  /* line 234, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-group-vertical .btn:first-child:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  /* line 238, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+  .btn-group-vertical .btn:last-child:not(:first-child) {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+
+/* line 244, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-group-circle {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+/* line 251, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_buttons.scss */
+.btn-group-circle-vertical {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+/* line 5, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge {
+  display: inline-block;
+  vertical-align: baseline;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #7f7f7f;
+  color: #fff;
+  font-size: 80%;
+  padding: 4px 8px;
+  border-radius: 20px;
+  margin: 0 0 0 4px; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-default {
+  background: linear-gradient(to bottom, #666666, #999999) ;
+  color: #fff; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-default {
+  background: linear-gradient(to bottom, #7f7f7f, #666666, #999999) ;
+  color: #fff; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-default {
+  background: #7f7f7f ;
+  color: #fff; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-primary {
+  background: linear-gradient(to bottom, #00528d, #008ef3) ;
+  color: #fff; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-primary {
+  background: linear-gradient(to bottom, #0070c0, #00528d, #008ef3) ;
+  color: #fff; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-primary {
+  background: #0070c0 ;
+  color: #fff; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-secondary {
+  background: linear-gradient(to bottom, #3274b0, #72a7d6) ;
+  color: #fff; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-secondary {
+  background: linear-gradient(to bottom, #4a8ecb, #3274b0, #72a7d6) ;
+  color: #fff; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-secondary {
+  background: #4a8ecb ;
+  color: #fff; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-danger {
+  background: linear-gradient(to bottom, #c5271c, #e8685f) ;
+  color: #fff; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-danger {
+  background: linear-gradient(to bottom, #e23e32, #c5271c, #e8685f) ;
+  color: #fff; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-danger {
+  background: #e23e32 ;
+  color: #fff; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-info {
+  background: linear-gradient(to bottom, #666666, #999999) ;
+  color: #fff; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-info {
+  background: linear-gradient(to bottom, #7f7f7f, #666666, #999999) ;
+  color: #fff; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-info {
+  background: #7f7f7f ;
+  color: #fff; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-warning {
+  background: linear-gradient(to bottom, #cc7a00, #ffad33) ;
+  color: #fff; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-warning {
+  background: linear-gradient(to bottom, #ff9800, #cc7a00, #ffad33) ;
+  color: #fff; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-warning {
+  background: #ff9800 ;
+  color: #fff; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-success {
+  background: linear-gradient(to bottom, #598938, #8bc067) ;
+  color: #fff; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-success {
+  background: linear-gradient(to bottom, #70ad47, #598938, #8bc067) ;
+  color: #fff; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-success {
+  background: #70ad47 ;
+  color: #fff; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-selected {
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #fff; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-selected {
+  background: linear-gradient(to bottom, white, #e6e6e6, white) ;
+  color: #fff; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-selected {
+  background: white ;
+  color: #fff; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-link {
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #404040; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-link {
+  background: linear-gradient(to bottom, white, #e6e6e6, white) ;
+  color: #404040; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-link {
+  background: white ;
+  color: #404040; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-dark {
+  background: linear-gradient(to bottom, #0f0f0f, #424242) ;
+  color: #fff; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-dark {
+  background: linear-gradient(to bottom, #282828, #0f0f0f, #424242) ;
+  color: #fff; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-dark {
+  background: #282828 ;
+  color: #fff; }
+
+/* line 22, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-white {
+  background: linear-gradient(to bottom, #e6e6e6, white) ;
+  color: #404040; }
+
+/* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-3d-white {
+  background: linear-gradient(to bottom, white, #e6e6e6, white) ;
+  color: #404040; }
+
+/* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_badges.scss */
+.badge-flat-white {
+  background: white ;
+  color: #404040; }
+
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 12px 14px;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: white;
+  border-radius: 20px; }
+  /* line 13, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb .breadcrumb-item {
+    display: inline-block; }
+    /* line 16, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      content: "/";
+      color: #6c757d;
+      display: inline-block;
+      padding: 0 8px; }
+    /* line 23, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb .breadcrumb-item.active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 28, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb .breadcrumb-item a {
+      color: #0070c0;
+      text-decoration: none; }
+      /* line 32, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+      .breadcrumb .breadcrumb-item a:hover {
+        text-decoration: underline; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-default {
+    color: #7f7f7f; }
+    /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-default a {
+      color: #7f7f7f; }
+    /* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-default .active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-default .breadcrumb-item + .breadcrumb-item::before {
+      color: #404040; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-default-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-default-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-default {
+    background-color: #7f7f7f; }
+    /* line 95, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-default a {
+      color: white; }
+    /* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-default .active {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 104, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-default .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-primary {
+    color: #0070c0; }
+    /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-primary a {
+      color: #0070c0; }
+    /* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-primary .active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-primary .breadcrumb-item + .breadcrumb-item::before {
+      color: #404040; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-primary-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-primary-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-primary {
+    background-color: #0070c0; }
+    /* line 95, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-primary a {
+      color: white; }
+    /* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-primary .active {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 104, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-primary .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-secondary {
+    color: #4a8ecb; }
+    /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-secondary a {
+      color: #4a8ecb; }
+    /* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-secondary .active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-secondary .breadcrumb-item + .breadcrumb-item::before {
+      color: #404040; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-secondary-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-secondary-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-secondary {
+    background-color: #4a8ecb; }
+    /* line 95, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-secondary a {
+      color: white; }
+    /* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-secondary .active {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 104, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-secondary .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-danger {
+    color: #e23e32; }
+    /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-danger a {
+      color: #e23e32; }
+    /* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-danger .active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-danger .breadcrumb-item + .breadcrumb-item::before {
+      color: #404040; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-danger-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-danger-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-danger {
+    background-color: #e23e32; }
+    /* line 95, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-danger a {
+      color: white; }
+    /* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-danger .active {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 104, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-danger .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-info {
+    color: #7f7f7f; }
+    /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-info a {
+      color: #7f7f7f; }
+    /* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-info .active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-info .breadcrumb-item + .breadcrumb-item::before {
+      color: #404040; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-info-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-info-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-info {
+    background-color: #7f7f7f; }
+    /* line 95, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-info a {
+      color: white; }
+    /* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-info .active {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 104, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-info .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-warning {
+    color: #ff9800; }
+    /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-warning a {
+      color: #ff9800; }
+    /* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-warning .active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-warning .breadcrumb-item + .breadcrumb-item::before {
+      color: #404040; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-warning-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-warning-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-warning {
+    background-color: #ff9800; }
+    /* line 95, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-warning a {
+      color: white; }
+    /* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-warning .active {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 104, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-warning .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-success {
+    color: #70ad47; }
+    /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-success a {
+      color: #70ad47; }
+    /* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-success .active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-success .breadcrumb-item + .breadcrumb-item::before {
+      color: #404040; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-success-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-success-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-success {
+    background-color: #70ad47; }
+    /* line 95, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-success a {
+      color: white; }
+    /* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-success .active {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 104, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-success .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-selected {
+    color: white; }
+    /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-selected a {
+      color: white; }
+    /* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-selected .active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-selected .breadcrumb-item + .breadcrumb-item::before {
+      color: #404040; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-selected-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-selected-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-selected {
+    background-color: white; }
+    /* line 95, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-selected a {
+      color: white; }
+    /* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-selected .active {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 104, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-selected .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-link {
+    color: white; }
+    /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-link a {
+      color: white; }
+    /* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-link .active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-link .breadcrumb-item + .breadcrumb-item::before {
+      color: #404040; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-link-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-link-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-link {
+    background-color: white; }
+    /* line 95, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-link a {
+      color: white; }
+    /* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-link .active {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 104, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-link .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-dark {
+    color: #282828; }
+    /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-dark a {
+      color: #282828; }
+    /* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-dark .active {
+      color: #404040;
+      text-decoration: none; }
+    /* line 71, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-dark .breadcrumb-item + .breadcrumb-item::before {
+      color: #404040; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-dark-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-dark-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-dark {
+    background-color: #282828; }
+    /* line 95, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-dark a {
+      color: white; }
+    /* line 99, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-dark .active {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 104, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.breadcrumb-bkg-dark .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-white {
+    color: white; }
+    /* line 45, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-white a {
+      color: white; }
+    /* line 49, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-white .active {
+      color: #d9d9d9;
+      text-decoration: none; }
+    /* line 54, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+    .breadcrumb.itens-color-white .breadcrumb-item + .breadcrumb-item::before {
+      color: white; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-white-white .breadcrumb-item + .breadcrumb-item::before {
+    color: white; }
+  /* line 83, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.itens-color-white-white .active {
+    color: #d9d9d9;
+    text-decoration: none; }
+  /* line 89, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-white {
+    background-color: white; }
+  /* line 111, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_breadcrumb.scss */
+  .breadcrumb.breadcrumb-bkg-none {
+    background-color: transparent; }
+
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_cards.scss */
+.cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid #e7e7e7;
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden; }
+  /* line 20, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_cards.scss */
+  .cards.card-286 {
+    width: 286px; }
+  /* line 24, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_cards.scss */
+  .cards .card-title, .cards .card-text {
+    margin-bottom: 12px; }
+  /* line 28, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_cards.scss */
+  .cards .card-link + .card-link {
+    margin-left: 24px; }
+  /* line 32, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_cards.scss */
+  .cards .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 14px; }
+  /* line 39, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_cards.scss */
+  .cards .card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 14px; }
+  /* line 48, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_cards.scss */
+  .cards .card-header {
+    padding: 12px 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: rgba(40, 40, 40, 0.03);
+    border-bottom: 1px solid #e7e7e7; }
+    /* line 55, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_cards.scss */
+    .cards .card-header + .list-group .list-group-item:first-child {
+      border-top: 0; }
+  /* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_cards.scss */
+  .cards .card-footer {
+    padding: 12px 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: rgba(40, 40, 40, 0.03);
+    border-top: 1px solid #e7e7e7; }
+  /* line 68, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_cards.scss */
+  .cards:first-child .list-group-item:first-child {
+    border-top: 0; }
+
+/* line 9, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 12px 0;
+  font-weight: 400;
+  color: #1e1e1e; }
+
+/* line 18, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+h1, .h1 {
+  font-size: 35px; }
+
+/* line 18, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+h2, .h2 {
+  font-size: 31px; }
+
+/* line 18, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+h3, .h3 {
+  font-size: 27px; }
+
+/* line 18, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+h4, .h4 {
+  font-size: 23px; }
+
+/* line 18, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+h5, .h5 {
+  font-size: 19px; }
+
+/* line 18, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+h6, .h6 {
+  font-size: 15px; }
+
+/* line 27, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.main-title-1 {
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 28px; }
+
+/* line 27, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.main-title-2 {
+  font-size: 62px;
+  font-weight: 300;
+  margin-bottom: 28px; }
+
+/* line 27, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.main-title-3 {
+  font-size: 54px;
+  font-weight: 300;
+  margin-bottom: 28px; }
+
+/* line 27, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.main-title-4 {
+  font-size: 46px;
+  font-weight: 300;
+  margin-bottom: 28px; }
+
+/* line 27, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.main-title-5 {
+  font-size: 38px;
+  font-weight: 300;
+  margin-bottom: 28px; }
+
+/* line 27, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.main-title-6 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 28px; }
+
+/* line 34, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.main-title-plos {
+  border-bottom: 1px solid #1e1e1e;
+  padding-bottom: 12px;
+  margin: 28px 0; }
+
+/* line 43, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.standout {
+  font-size: 19px;
+  font-weight: 300; }
+
+/* line 51, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+p {
+  margin: 12px 0; }
+
+/* line 55, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.small, small {
+  font-weight: 400;
+  font-size: 80%; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+mark, .mark {
+  padding: 4px;
+  background-color: #0070c0;
+  color: white;
+  border-radius: 20px;
+  margin: 2px;
+  display: inline-block; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-default, .mark.mark-default {
+    background: linear-gradient(to bottom, #666666, #999999) ; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-default, .mark.mark-flat-default {
+    background: #7f7f7f ; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-default, .mark.mark-3d-default {
+    background: linear-gradient(to bottom, #7f7f7f, #666666, #999999) ; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-primary, .mark.mark-primary {
+    background: linear-gradient(to bottom, #00528d, #008ef3) ; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-primary, .mark.mark-flat-primary {
+    background: #0070c0 ; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-primary, .mark.mark-3d-primary {
+    background: linear-gradient(to bottom, #0070c0, #00528d, #008ef3) ; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-secondary, .mark.mark-secondary {
+    background: linear-gradient(to bottom, #3274b0, #72a7d6) ; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-secondary, .mark.mark-flat-secondary {
+    background: #4a8ecb ; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-secondary, .mark.mark-3d-secondary {
+    background: linear-gradient(to bottom, #4a8ecb, #3274b0, #72a7d6) ; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-danger, .mark.mark-danger {
+    background: linear-gradient(to bottom, #c5271c, #e8685f) ; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-danger, .mark.mark-flat-danger {
+    background: #e23e32 ; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-danger, .mark.mark-3d-danger {
+    background: linear-gradient(to bottom, #e23e32, #c5271c, #e8685f) ; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-info, .mark.mark-info {
+    background: linear-gradient(to bottom, #666666, #999999) ; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-info, .mark.mark-flat-info {
+    background: #7f7f7f ; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-info, .mark.mark-3d-info {
+    background: linear-gradient(to bottom, #7f7f7f, #666666, #999999) ; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-warning, .mark.mark-warning {
+    background: linear-gradient(to bottom, #cc7a00, #ffad33) ; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-warning, .mark.mark-flat-warning {
+    background: #ff9800 ; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-warning, .mark.mark-3d-warning {
+    background: linear-gradient(to bottom, #ff9800, #cc7a00, #ffad33) ; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-success, .mark.mark-success {
+    background: linear-gradient(to bottom, #598938, #8bc067) ; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-success, .mark.mark-flat-success {
+    background: #70ad47 ; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-success, .mark.mark-3d-success {
+    background: linear-gradient(to bottom, #70ad47, #598938, #8bc067) ; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-selected, .mark.mark-selected {
+    background: linear-gradient(to bottom, #e6e6e6, white) ; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-selected, .mark.mark-flat-selected {
+    background: white ; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-selected, .mark.mark-3d-selected {
+    background: linear-gradient(to bottom, white, #e6e6e6, white) ; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-link, .mark.mark-link {
+    background: linear-gradient(to bottom, #e6e6e6, white) ;
+    color: #404040; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-link, .mark.mark-flat-link {
+    background: white ;
+    color: #404040; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-link, .mark.mark-3d-link {
+    background: linear-gradient(to bottom, white, #e6e6e6, white) ;
+    color: #404040; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-dark, .mark.mark-dark {
+    background: linear-gradient(to bottom, #0f0f0f, #424242) ;
+    color: white; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-dark, .mark.mark-flat-dark {
+    background: #282828 ;
+    color: white; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-dark, .mark.mark-3d-dark {
+    background: linear-gradient(to bottom, #282828, #0f0f0f, #424242) ;
+    color: white; }
+  /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-white, .mark.mark-white {
+    background: linear-gradient(to bottom, #e6e6e6, white) ; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-flat-white, .mark.mark-flat-white {
+    background: white ; }
+  /* line 94, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  mark.mark-3d-white, .mark.mark-3d-white {
+    background: linear-gradient(to bottom, white, #e6e6e6, white) ; }
+
+/* line 110, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.blockquote {
+  margin-bottom: 12px;
+  font-size: 18px; }
+
+/* line 115, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: #7f7f7f; }
+  /* line 120, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  .blockquote-footer::before {
+    content: "\2014 \00A0"; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-armenian {
+  list-style: armenian;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-cjk-ideographic {
+  list-style: cjk-ideographic;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-decimal {
+  list-style: decimal;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-decimal-leading-zero {
+  list-style: decimal-leading-zero;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-georgian {
+  list-style: georgian;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-hebrew {
+  list-style: hebrew;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-hiragana {
+  list-style: hiragana;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-hiragana-iroha {
+  list-style: hiragana-iroha;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-katakana {
+  list-style: katakana;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-katakana-iroha {
+  list-style: katakana-iroha;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-lower-alpha {
+  list-style: lower-alpha;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-lower-greek {
+  list-style: lower-greek;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-lower-latin {
+  list-style: lower-latin;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-lower-roman {
+  list-style: lower-roman;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-none {
+  list-style: none;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-upper-alpha {
+  list-style: upper-alpha;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-upper-greek {
+  list-style: upper-greek;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-upper-latin {
+  list-style: upper-latin;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-upper-roman {
+  list-style: upper-roman;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-initial {
+  list-style: initial;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-disc {
+  list-style: disc;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-circle {
+  list-style: circle;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-none {
+  list-style: none;
+  padding-left: 30px; }
+
+/* line 132, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-style-square {
+  list-style: square;
+  padding-left: 30px; }
+
+/* line 138, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul li {
+  margin-bottom: 4px; }
+
+/* line 143, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+ul.list-inline {
+  list-style: none; }
+  /* line 146, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  ul.list-inline:not(:last-child) {
+    margin-right: 8px; }
+  /* line 150, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_typography.scss */
+  ul.list-inline .list-inline-item {
+    display: inline-block; }
+
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+.list-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0; }
+  /* line 12, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group .list-group-item {
+    position: relative;
+    display: block;
+    padding: 12px 14px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7; }
+    /* line 20, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+    .list-group .list-group-item.active {
+      background-color: #0070c0 !important;
+      border-color: #0070c0 !important;
+      color: white; }
+  /* line 27, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group:first-child .list-group-item:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; }
+  /* line 32, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group:last-child .list-group-item:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; }
+  /* line 37, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group.obj-br-n:first-child .list-group-item:first-child, .btn-group .list-group.btn:first-child:not(:first-child):not(:last-child) .list-group-item:first-child, .btn-group-vertical .list-group.btn:first-child:not(:first-child):not(:last-child) .list-group-item:first-child, .list-group.progress-bar:first-child:not(:first-child):not(:last-child) .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  /* line 42, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group.obj-br-n:last-child .list-group-item:last-child, .btn-group .list-group.btn:last-child:not(:first-child):not(:last-child) .list-group-item:last-child, .btn-group-vertical .list-group.btn:last-child:not(:first-child):not(:last-child) .list-group-item:last-child, .list-group.progress-bar:last-child:not(:first-child):not(:last-child) .list-group-item:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+  /* line 47, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group.obj-br-m:first-child .list-group-item:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; }
+  /* line 52, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group.obj-br-m:last-child .list-group-item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; }
+  /* line 57, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group.list-group-bd-n .list-group-item {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0; }
+  /* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group .list-group-item-action {
+    width: 100%;
+    color: #495057;
+    text-align: inherit;
+    font-size: inherit; }
+    /* line 69, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+    .list-group .list-group-item-action:hover {
+      background-color: #fafafa;
+      text-decoration: none; }
+    /* line 74, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+    .list-group .list-group-item-action:disabled {
+      color: #cccccc; }
+  /* line 82, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group.list-group-line .list-group-item {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0; }
+  /* line 88, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group.list-group-line:first-child .list-group-item:first-child {
+    border-top: 0; }
+  /* line 92, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_list.scss */
+  .list-group.list-group-line:last-child .list-group-item:last-child {
+    border-bottom: 0; }
+
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert {
+  position: relative;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border: 1px solid transparent;
+  border-radius: 20px; }
+
+/* line 11, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-link {
+  font-weight: 700;
+  color: unset;
+  vertical-align: initial; }
+  /* line 16, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-link:hover {
+    color: unset; }
+
+/* line 25, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-default {
+  border: 1px solid rgba(114, 114, 114, 0.8);
+  background: linear-gradient(to bottom, #999999, #cccccc) ; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-default hr {
+    opacity: 0.5;
+    border-top-color: #727272; }
+
+/* line 25, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-primary {
+  border: 1px solid rgba(0, 97, 167, 0.8);
+  background: linear-gradient(to bottom, #008ef3, #5abaff) ; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-primary hr {
+    opacity: 0.5;
+    border-top-color: #0061a7; }
+
+/* line 25, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-secondary {
+  border: 1px solid rgba(56, 130, 195, 0.8);
+  background: linear-gradient(to bottom, #72a7d6, #c1d8ed) ; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-secondary hr {
+    opacity: 0.5;
+    border-top-color: #3882c3; }
+
+/* line 25, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-danger {
+  border: 1px solid rgba(219, 44, 31, 0.8);
+  background: linear-gradient(to bottom, #e8685f, #f5bcb8) ; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-danger hr {
+    opacity: 0.5;
+    border-top-color: #db2c1f; }
+
+/* line 25, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-info {
+  border: 1px solid rgba(114, 114, 114, 0.8);
+  background: linear-gradient(to bottom, #999999, #cccccc) ; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-info hr {
+    opacity: 0.5;
+    border-top-color: #727272; }
+
+/* line 25, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-warning {
+  border: 1px solid rgba(230, 137, 0, 0.8);
+  background: linear-gradient(to bottom, #ffad33, #ffd699) ; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-warning hr {
+    opacity: 0.5;
+    border-top-color: #e68900; }
+
+/* line 25, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-success {
+  border: 1px solid rgba(100, 155, 64, 0.8);
+  background: linear-gradient(to bottom, #8bc067, #c2deaf) ; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-success hr {
+    opacity: 0.5;
+    border-top-color: #649b40; }
+
+/* line 25, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-selected {
+  border: 1px solid rgba(242, 242, 242, 0.8);
+  background: linear-gradient(to bottom, #e6e6e6, white) ; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-selected hr {
+    opacity: 0.5;
+    border-top-color: #f2f2f2; }
+
+/* line 25, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-dark {
+  color: white !important;
+  border: 1px solid #f2f2f2;
+  background: linear-gradient(to bottom, #424242, #757575) ; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-dark hr {
+    opacity: 0.5;
+    border-top-color: #1b1b1b; }
+
+/* line 25, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+.alert-white {
+  border: 1px solid rgba(242, 242, 242, 0.8);
+  background: linear-gradient(to bottom, #e6e6e6, white) ; }
+  /* line 35, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_alerts.scss */
+  .alert-white hr {
+    opacity: 0.5;
+    border-top-color: #f2f2f2; }
+
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: 14px;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  margin-top: 12px;
+  position: relative; }
+  /* line 13, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+  .progress.style-plos {
+    background-size: 15rem;
+    animation: progressbarAnim 1.5s steps(15) infinite;
+    background-image: repeating-linear-gradient(135deg, #e6e6e6, #e6e6e6 5rem, #e0e0e0 5rem, #e0e0e0 10rem) !important; }
+
+/* line 20, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-color: #0070c0;
+  border-radius: 20px;
+  height: 100%;
+  background: linear-gradient(to right, #008ef3, #5abaff) ; }
+  /* line 43, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+  .progress-bar:first-child:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  /* line 47, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+  .progress-bar:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  /* line 52, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+  .progress-bar.loading {
+    width: 50%;
+    animation: loadingProgressbar 2s infinite;
+    position: absolute !important;
+    transition: all ease 500ms; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-default {
+  background: linear-gradient(to right, #999999, #cccccc) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-default-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, #999999, #999999 5rem, #7f7f7f 5rem, #7f7f7f 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-primary {
+  background: linear-gradient(to right, #008ef3, #5abaff) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-primary-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, #008ef3, #008ef3 5rem, #0070c0 5rem, #0070c0 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-secondary {
+  background: linear-gradient(to right, #72a7d6, #c1d8ed) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-secondary-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, #72a7d6, #72a7d6 5rem, #4a8ecb 5rem, #4a8ecb 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-danger {
+  background: linear-gradient(to right, #e8685f, #f5bcb8) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-danger-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, #e8685f, #e8685f 5rem, #e23e32 5rem, #e23e32 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-info {
+  background: linear-gradient(to right, #999999, #cccccc) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-info-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, #999999, #999999 5rem, #7f7f7f 5rem, #7f7f7f 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-warning {
+  background: linear-gradient(to right, #ffad33, #ffd699) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-warning-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, #ffad33, #ffad33 5rem, #ff9800 5rem, #ff9800 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-success {
+  background: linear-gradient(to right, #8bc067, #c2deaf) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-success-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, #8bc067, #8bc067 5rem, #70ad47 5rem, #70ad47 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-selected {
+  background: linear-gradient(to right, #e6e6e6, white) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-selected-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, white, white 5rem, white 5rem, white 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-link {
+  background: linear-gradient(to right, #e6e6e6, white) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-link-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, white, white 5rem, white 5rem, white 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-dark {
+  background: linear-gradient(to right, #424242, #757575) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-dark-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, #424242, #424242 5rem, #282828 5rem, #282828 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 60, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-white {
+  background: linear-gradient(to right, #e6e6e6, white) ; }
+
+/* line 63, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_progressbar.scss */
+.progressbar-white-plos {
+  background-size: 15rem;
+  background-image: repeating-linear-gradient(135deg, white, white 5rem, white 5rem, white 10rem);
+  animation: progressbarAnim 1.5s steps(15) infinite; }
+
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-group {
+  margin-bottom: 12px; }
+
+/* line 6, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-control {
+  display: block;
+  width: 100%; }
+
+/* line 11, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-text {
+  display: block;
+  margin-top: 4px; }
+
+/* line 16, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-check {
+  margin: 12px 0; }
+
+/* line 20, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-check-input {
+  display: inline-block;
+  position: relative;
+  margin: 4px;
+  vertical-align: middle; }
+
+/* line 27, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-check-label {
+  margin-bottom: 0;
+  vertical-align: middle; }
+
+/* line 32, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-control-file, .form-control-range {
+  display: block;
+  width: 100%; }
+
+/* line 37, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-control:disabled, .form-control[readonly] {
+  background: #e6e6e6; }
+
+/* line 41, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-check-input:disabled ~ .form-check-label {
+  color: #999999; }
+
+/* line 45, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-control-plaintext {
+  background: transparent;
+  border-color: transparent; }
+  /* line 48, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+  .form-control-plaintext:focus {
+    border-color: transparent;
+    box-shadow: none;
+    color: unset; }
+
+/* line 55, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-check-inline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 8px; }
+
+/* line 66, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  /* line 79, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+  .form-inline .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0; }
+
+/* line 101, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.custom-file-input {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  opacity: 0; }
+
+/* line 110, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_form.scss */
+.custom-file-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  background-color: white;
+  border: 1px solid #c1c1c1;
+  padding: 12px 14px;
+  border-radius: 20px; }
+
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+.input-group-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .375rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: .25rem; }
+
+/* line 21, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+.input-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%; }
+
+/* line 34, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+.input-group-prepend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -1; }
+  /* line 40, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+  .input-group-prepend .input-group-text, .input-group-prepend .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 0;
+    margin: 0; }
+    /* line 48, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+    .input-group-prepend .input-group-text:not(:first-child), .input-group-prepend .btn:not(:first-child) {
+      border-radius: 0; }
+
+/* line 56, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+.input-group-append {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -1; }
+  /* line 62, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+  .input-group-append .input-group-text, .input-group-append .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 0;
+    margin: 0; }
+    /* line 70, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+    .input-group-append .input-group-text:not(:last-child), .input-group-append .btn:not(:last-child) {
+      border-radius: 0; }
+
+/* line 80, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+.input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child), .input-group > .custom-file:not(:first-child) .custom-file-label {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+/* line 85, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+.input-group > .custom-select:not(:last-child), .input-group > .form-control:not(:last-child), .input-group > .custom-file:not(:last-child) .custom-file-label {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+/* line 90, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+.input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0; }
+
+/* line 107, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_input-group.scss */
+.input-group > .custom-file + .custom-file, .input-group > .custom-file + .custom-select, .input-group > .custom-file + .form-control, .input-group > .custom-select + .custom-file, .input-group > .custom-select + .custom-select, .input-group > .custom-select + .form-control, .input-group > .form-control + .custom-file, .input-group > .form-control + .custom-select, .input-group > .form-control + .form-control {
+  margin-left: -1px; }
+
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_jumbovision.scss */
+.jumbovision {
+  background-color: #f2f2f2;
+  padding: 56px 28px;
+  border-radius: 20px; }
+
+/* line 1, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/_grid.scss */
+.container {
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+/* line 31, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/nuiverse.scss */
+body {
+  padding: 10px;
+  max-width: 899px; }
+
+/* line 36, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/nuiverse.scss */
+#code-show {
+  padding: 10px;
+  background: #e3e3e3;
+  margin: 20px 0; }
+
+/* line 41, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/nuiverse.scss */
+#code-show span {
+  display: block;
+  margin: 0 0 8px 0; }
+
+/* line 46, Z:/2-Nuinalp/4-Produtos-Em desenvolvimento - Gravar Separado 5.5GB/Frameworks/nuiverse/scss/nuiverse.scss */
+.example {
+  position: relative;
+  padding: 14px;
+  margin: 1rem 0 0 0;
+  border: solid #f7f7f9;
+  border-width: 4px;
+  width: calc(100% - 22px);
+  border-radius: 20px; }
+
+/*# sourceMappingURL=nuiverse.css.map */
