@@ -4,6 +4,6 @@
 <h2 align="center">Current version - v0.0.1 Alpha</h2>
 <p align="center">This version is a alpha preview. In this version does not have documentation and example codes. The official documentation is coming soon.</p>
 <hr>
-<p>License</p>
+<h2>License</h2>
 <p>Copyright (c) 2018 The Nuinalp Authors. All rights reserved.<br>
  Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.</p>
