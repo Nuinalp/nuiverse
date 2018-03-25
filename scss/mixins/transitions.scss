@@ -1,0 +1,59 @@
+//Transitions
+
+@mixin transition($velocity: 500, $type: #{'default'}){
+  
+  //Select the transition...
+  @if $type == "click"{
+    -webkit-animation: click 200ms; /* Safari 4.0 - 8.0 */
+    animation: click 20mms;
+  }
+  @else if $type == "default"{
+    //Default anim for effects
+    transition: all ease #{$velocity}ms;
+  }
+  @else if $type == 'click-btn'{
+    -webkit-animation: fxclick 700ms ease-out; /* Safari 4.0 - 8.0 */
+    animation: fxclick 700ms ease-out;
+  }
+  
+  @else if $type == 'fx-btn-hover'{
+    -webkit-animation: fxclick 2.6s ease-out infinite; /* Safari 4.0 - 8.0 */
+    animation: fxhover 2.6s ease-out infinite;
+  }
+}
+
+ @keyframes click {
+    0% {transform: scale(0.8);}
+    50% {transform: scale(0.9);}
+    100% {transform: scale(1);}
+  }
+
+  @keyframes fxclick {
+    0% {width: 0%; height: 0%; filter: blur(11px); opacity: 0.5;}
+    100% {width: 200%; height: 200%; filter: blur(11px); opacity: 0.5;}
+  }
+
+  @keyframes fxhover {
+    0% {width: 100%; height: 100%; opacity: 0.9;}
+    50% {width: 200%; height: 200%; opacity: 0.9;}
+    100% {width: 100%; height: 100%; opacity: 0.9;}
+  }
+
+@keyframes progressbarAnim{
+  0% {background-position: 0 0;}
+  100% {background-position: -15rem 0;}
+}
+
+@keyframes loadingProgressbar{
+  0%{transform: translateX(-89%);}
+  50%{transform: translateX(189%);}
+  100%{transform: translateX(-89%);}
+}
+
+//  -webkit-transition: all $velocity;
+//  -o-transition: all $velocity;
+//  transition: all $velocity;
+//  -moz-transition: all ease $velocity;
+//  -ms-transition: all ease $velocity;
+//  
+  

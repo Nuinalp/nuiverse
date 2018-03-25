@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<!--
+ Copyright (c) 2018 The Nuinalp Authors. All rights reserved.
+ Use of this source code is governed by a BSD-style license that can be
+ found in the LICENSE file.
+-->
+  <head>
+    <meta charset="utf-8">
+    <title>Test button group - NUIverse</title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/nuiverse.css" />
+<!--    <link rel="stylesheet" type="text/css" href="../bootstrap-4-dev/dist/css/bootstrap.min.css" />-->
+    
+    <style>
+      body{
+        padding: 10px;
+      }
+      
+      *{
+        font-family: Arial;
+      }
+      
+      h1,h2,h3,h4{
+        display: block;
+        margin: 0 0 10px 0;
+      }
+      
+      div{
+        display: block;
+        padding: 20px 0;
+      }
+      
+      h1{
+        font-size: 20pt;
+      }
+      
+      h2{
+        font-size:16pt;
+        
+      }
+    
+      h3{
+        font-size:14pt;
+      }
+      
+      #code-show{
+        padding: 10px;
+        background: rgb(227,227,227);
+        margin: 20px 0;
+      }
+      #code-show span{
+        display: block;
+        margin: 0 0 8px 0;
+      }
+    </style>
+  </head>
+  <body>
+    
+<h1>Grupo de botões</h1>
+<h2>Exemplos básico de uso</h2>    
+
+<div class="btn-group" role="group">
+<button type="button" class="btn btn-secondary"><span>Esqueda</span></button>
+  <button type="button" class="btn btn-secondary"><span>Meio</span></button>
+  <button type="button" class="btn btn-secondary"><span>Direita</span></button>
+</div>
+
+
+    
+<div id="code-show">
+<span>&lt;div class="btn-group" role="group"&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Esqueda&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Meio&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Direita&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;/div&gt;</span>
+</div>
+    
+<h2>Botões sem sombra</h2>    
+
+<div class="btn-group btn-itens-nosd" role="group">
+<button type="button" class="btn btn-secondary"><span>Esqueda</span></button>
+  <button type="button" class="btn btn-secondary"><span>Meio</span></button>
+  <button type="button" class="btn btn-secondary"><span>Direita</span></button>
+</div>
+
+<div id="code-show">
+<span>&lt;div class="btn-group btn-itens-nosd" role="group"&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Esqueda&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Meio&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Direita&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;/div&gt;</span>
+</div>
+    
+<h2>Grupo vertical</h2>    
+
+<div class="btn-group-vertical btn-itens-nosd" role="group">
+<button type="button" class="btn btn-secondary"><span>Esqueda</span></button>
+  <button type="button" class="btn btn-secondary"><span>Meio</span></button>
+  <button type="button" class="btn btn-secondary"><span>Direita</span></button>
+</div>
+
+<div id="code-show">
+<span>&lt;div class="btn-group-vertical btn-itens-nosd" role="group"&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Esqueda&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Meio&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Direita&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;/div&gt;</span>
+</div>
+    
+<h2>Grupo vertical para botões circulares</h2>    
+<h3>padrão</h3>
+<div class="btn-group-circle" role="group">
+<button type="button" class="btn btn-circle btn-secondary"><span>Esqueda</span></button>
+  <button type="button" class="btn btn-circle btn-secondary"><span>Meio</span></button>
+  <button type="button" class="btn btn-circle btn-secondary"><span>Direita</span></button>
+</div>
+
+<div id="code-show">
+<span>&lt;div class="btn-group-vertical btn-itens-nosd" role="group"&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Esqueda&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Meio&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Direita&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;/div&gt;</span>
+</div>
+    
+<h3>Vertical</h3>
+<div class="btn-group-circle-vertical" role="group">
+<button type="button" class="btn btn-circle btn-secondary"><span>Esqueda</span></button>
+  <button type="button" class="btn btn-circle btn-secondary"><span>Meio</span></button>
+  <button type="button" class="btn btn-circle btn-secondary"><span>Direita</span></button>
+</div>
+
+<div id="code-show">
+<span>&lt;div class="btn-group-vertical btn-itens-nosd" role="group"&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Esqueda&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Meio&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Direita&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;/div&gt;</span>
+</div>  
+    
+<h3>Tamanhos</h3>
+    
+<div class="btn-group-circle btn-group-lg" role="group">
+<button type="button" class="btn btn-secondary"><span>Esqueda</span></button>
+  <button type="button" class="btn btn-secondary"><span>Meio</span></button>
+  <button type="button" class="btn btn-secondary"><span>Direita</span></button>
+</div>
+
+<div class="btn-group-circle" role="group">
+<button type="button" class="btn btn-secondary"><span>Esqueda</span></button>
+  <button type="button" class="btn btn-secondary"><span>Meio</span></button>
+  <button type="button" class="btn btn-secondary"><span>Direita</span></button>
+</div>
+
+<div class="btn-group-circle btn-group-sm" role="group">
+<button type="button" class="btn btn-secondary"><span>Esqueda</span></button>
+  <button type="button" class="btn btn-secondary"><span>Meio</span></button>
+  <button type="button" class="btn btn-secondary"><span>Direita</span></button>
+</div>
+
+<div id="code-show">
+<span>&lt;div class="btn-group-vertical btn-itens-nosd" role="group"&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Esqueda&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Meio&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Direita&lt;/span&gt;&lt;/button&gt;</span>
+<span>&lt;/div&gt;</span>
+</div>
+
+
+
+    
+</body>
+</html>

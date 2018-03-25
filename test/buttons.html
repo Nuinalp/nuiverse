@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<!--
+ Copyright (c) 2018 The Nuinalp Authors. All rights reserved.
+ Use of this source code is governed by a BSD-style license that can be
+ found in the LICENSE file.
+-->
+  <head>
+    <meta charset="utf-8">
+    <title>Test buttons - NUIverse</title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/nuiverse.css" />
+<!--    <link rel="stylesheet" type="text/css" href="../bootstrap-4-dev/dist/css/bootstrap.min.css" />-->
+    
+    <style>
+      body{
+        padding: 10px;
+      }
+      
+      *{
+        font-family: Arial;
+      }
+      
+      h1,h2,h3,h4{
+        display: block;
+        margin: 0 0 10px 0;
+      }
+      
+      div{
+        display: block;
+        padding: 20px 0;
+      }
+      
+      h1{
+        font-size: 20pt;
+      }
+      
+      h2{
+        font-size:16pt;
+        
+      }
+    
+      h3{
+        font-size:14pt;
+      }
+      
+      #code-show{
+        padding: 10px;
+        background: rgb(227,227,227);
+        margin: 20px 0;
+      }
+      #code-show span{
+        display: block;
+        margin: 0 0 8px 0;
+      }
+    </style>
+  </head>
+  <body>
+    
+<h1>Botões especiais</h1>
+<h2>Exemplos:</h2>    
+
+<div class="example">
+<button type="button" class="btn btn-primary"><span>Primary</span></button>
+
+<button type="button" class="btn btn-secondary"><span>Secondary</span></button>
+
+<button type="button" class="btn btn-success"><span>Success</span></button>
+
+<button type="button" class="btn btn-info"><span>Info</span></button>
+
+<button type="button" class="btn btn-warning"><span>Warning</span></button>
+
+<button type="button" class="btn btn-danger"><span>Danger</span></button>
+
+<button type="button" class="btn btn-link"><span>Link</span></button>
+</div>
+    
+<div id="code-show">
+<span>&lt;button type="button" class="btn btn-primary"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-secondary"&gt;&lt;span&gt;Secondary&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-success"&gt;&lt;span&gt;Success&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-info"&gt;&lt;span&gt;Info&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-warning"&gt;&lt;span&gt;Warning&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-danger"&gt;&lt;span&gt;Danger&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-link"&gt;&lt;span&gt;Link&lt;/span&gt;&lt;/button&gt;</span>
+</div>
+
+<h2>System/btn-circle Buttons</h2>
+<div class="example">
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-circle btn-primary"><span>Primary</span></button>
+
+<!-- Secondary, outline button -->
+<button type="button" class="btn btn-circle btn-secondary"><span>Secondary</span></button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-circle btn-success"><span>Success</span></button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-circle btn-info"><span>Info</span></button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-circle btn-warning"><span>Warning</span></button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-circle btn-danger"><span>Danger</span></button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-circle btn-link"><span>Link</span></button>
+
+<button type="button" class="btn btn-circle btn-dark"><span>Dark</span></button>
+</div>
+  
+<div id="code-show">
+<span>&lt;button type="button" class="btn btn-circle btn-primary"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-circle btn-secondary"&gt;&lt;span&gt;Secondary&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-circle btn-success"&gt;&lt;span&gt;Success&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-circle btn-info"&gt;&lt;span&gt;Info&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-circle btn-warning"&gt;&lt;span&gt;Warning&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-circle btn-danger"&gt;&lt;span&gt;Danger&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-circle btn-link"&gt;&lt;span&gt;Link&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-circle btn-dark"&gt;&lt;span&gt;Link&lt;/span&gt;&lt;/button&gt;</span>
+</div>
+<h2>Button tags</h2>   
+<div class="example">
+  
+  <a class="btn btn-primary" href="#" role="button">Link</a>
+  <button class="btn btn-primary" type="submit">Button</button>
+  <button class="btn btn-primary" type="button">Input</button>
+  <button class="btn btn-primary" type="submit">Submit</button>
+  <button class="btn btn-primary" type="reset">Reset</button>
+</div> 
+  <div id="code-show">
+  <span>&lt;a class="btn btn-primary" href="#" role="button"&gt;Link&lt;/a&gt;</span>
+  <span>&lt;button class="btn btn-primary" type="submit"&gt;Button&lt;/button&gt;</span>
+  <span>&lt;button class="btn btn-primary" type="button"&gt;Input&lt;/button&gt;</span>
+  <span>&lt;button class="btn btn-primary" type="submit"&gt;Submit&lt;/button&gt;</span>
+  <span>&lt;button class="btn btn-primary" type="reset"&gt;Reset&lt;/button&gt;</span>
+  </div>
+  
+  <h2>Button inpus, click effect is not supported</h2>
+  <div class="example"> 
+  <input class="btn btn-primary" type="button" value="Input">
+  <input class="btn btn-primary" type="submit" value="Submit">
+  <input class="btn btn-primary" type="reset" value="Reset">
+  </div>
+  <div id="code-show">
+  <span>&lt;input class="btn btn-primary" type="button" value="Input"&gt;</span>
+  <span>&lt;input class="btn btn-primary" type="submit" value="Submit"&gt;</span>
+  <span>&lt;input class="btn btn-primary" type="reset" value="Reset"&gt;</span>
+  </div>
+    
+<h2>Outline special buttons</h2>   
+<div class="example">
+  
+  <button type="button" class="btn btn-outline-primary"><span>Primary</span></button>
+
+  <button type="button" class="btn btn-outline-secondary"><span>Secondary</span></button>
+
+  <button type="button" class="btn btn-outline-success"><span>Success</span></button>
+
+  <button type="button" class="btn btn-outline-info"><span>Info</span></button>
+
+  <button type="button" class="btn btn-outline-warning"><span>Warning</span></button>
+
+  <button type="button" class="btn btn-outline-danger"><span>Danger</span></button>
+
+  <button type="button" class="btn btn-outline-link"><span>Link</span></button>
+    </div> 
+<div id="code-show">
+<span>&lt;button type="button" class="btn btn-outline-primary"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-secondary"&gt;&lt;span&gt;Secondary&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-success"&gt;&lt;span&gt;Success&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-info"&gt;&lt;span&gt;Info&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-warning"&gt;&lt;span&gt;Warning&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-danger"&gt;&lt;span&gt;Danger&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-link"&gt;&lt;span&gt;Link&lt;/span&gt;&lt;/button&gt;</span>
+</div>
+  <h2>Circle outline</h2>
+<div class="example">
+  
+  <button type="button" class="btn btn-outline-circle btn-primary"><span>Primary</span></button>
+
+  <button type="button" class="btn btn-outline-circle btn-secondary"><span>Secondary</span></button>
+
+  <button type="button" class="btn btn-outline-circle btn-success"><span>Success</span></button>
+
+  <button type="button" class="btn btn-outline-circle btn-info"><span>Info</span></button>
+
+  <button type="button" class="btn btn-outline-circle btn-warning"><span>Warning</span></button>
+
+  <button type="button" class="btn btn-outline-circle btn-danger"><span>Danger</span></button>
+
+  <button type="button" class="btn btn-outline-circle btn-link"><span>Link</span></button>
+
+  <button type="button" class="btn btn-outline-circle btn-dark"><span>Dark</span></button>  
+  </div>  
+  <div id="code-show">
+  <span>&lt;button type="button" class="btn btn-outline-circle btn-primary"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-circle btn-secondary"&gt;&lt;span&gt;Secondary&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-circle btn-success"&gt;&lt;span&gt;Success&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-circle btn-info"&gt;&lt;span&gt;Info&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-circle btn-warning"&gt;&lt;span&gt;Warning&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-circle btn-danger"&gt;&lt;span&gt;Danger&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-circle btn-link"&gt;&lt;span&gt;Link&lt;/span&gt;&lt;/button&gt;</span>
+
+<span>&lt;button type="button" class="btn btn-outline-circle btn-dark"&gt;&lt;span&gt;Link&lt;/span&gt;&lt;/button&gt;</span>
+
+  
+  </div>
+  
+<h2>Tamanho dos botões</h2>
+  <h3>Botão pequeno</h3>    
+<div class="example">
+
+  <button type="button" class="btn btn-primary size-sm"><span>Primary</span></button>
+  </div> 
+  <div id="code-show">
+  <span>&lt;button type="button" class="btn btn-primary size-sm"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+  </div>
+  
+  <h3>Large</h3>
+  <div class="example">
+  <button type="button" class="btn btn-primary size-lg"><span>Primary</span></button>
+  </div>
+  <div id="code-show">
+  <span>&lt;button type="button" class="btn btn-primary size-lg"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+  </div>
+    
+<h2>Bordas</h2>
+  <h2>Border radius média</h2>
+  <div class="example">
+  <button type="button" class="btn btn-primary obj-br-m"><span>Primary</span></button>
+  </div>
+  
+  <div id="code-show">
+  <span>&lt;button type="button" class="btn btn-primary obj-br-m"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+  </div>
+    
+  <h2>Sem border radius</h2>
+  
+  <div class="example">
+  <button type="button" class="btn btn-primary btn-br-n"><span>Primary</span></button>
+  </div>
+  
+  <div id="code-show">
+  <span>&lt;button type="button" class="btn btn-primary btn-br-n"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+  </div>
+  <h2>Sobras</h2>
+  <h3>Sem sobras</h3>  
+<div class="example">
+
+  <button type="button" class="btn btn-primary obj-nosd"><span>Primary</span></button>
+    </div>    
+  <div id="code-show">
+  <span>&lt;button type="button" class="btn btn-primary obj-nosd"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+  </div>
+
+  <h2>Efeito de fundo</h2>
+  <h3>3d</h3>
+  
+<div class="example">
+  <button type="button" class="btn btn-3d-primary obj-nosd"><span>Primary</span></button>
+</div>    
+<div id="code-show">
+  <span>&lt;button type="button" class="btn btn-3d-primary obj-nosd"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+</div>
+  
+  <h3>Flat</h3>
+    
+  <div class="example">
+  <button type="button" class="btn btn-flat-primary obj-nosd"><span>Primary</span></button>
+  </div>
+  
+    <div id="code-show">
+  <span>&lt;button type="button" class="btn btn-flat-primary obj-nosd"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+  </div>
+
+   <h2>Estado desabilitado</h2>
+  <h3>Padrão</h3>
+ 
+<div class="example">
+  <button type="button" class="btn btn-primary" disabled><span>Primary</span></button>
+  
+  <button type="button" class="btn btn-circle btn-danger disabled"><span>Danger</span></button>
+  
+  <button type="button" class="btn btn-circle btn-outline-primary disabled"><span>Primary</span></button>
+</div>
+
+    <div id="code-show">
+  <span>&lt;button type="button" class="btn btn-3d-primary" disabled&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+  <span>&lt;button type="button" class="btn btn-circle btn-danger disabled"&gt;&lt;span&gt;Danger&lt;/span&gt;&lt;/button&gt;</span>
+  <span>&lt;button type="button" class="btn btn-circle btn-outline-primary disabled"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+  </div> 
+  
+
+
+    
+</body>
+</html>

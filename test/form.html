@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<!--
+ Copyright (c) 2018 The Nuinalp Authors. All rights reserved.
+ Use of this source code is governed by a BSD-style license that can be
+ found in the LICENSE file.
+-->
+  <head>
+    <meta charset="utf-8">
+    <title>Formulários - NUIverse</title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/nuiverse.css" />
+<!--    <link rel="stylesheet" type="text/css" href="../bootstrap-4-dev/dist/css/bootstrap.min.css" />-->
+    
+  </head>
+  <body>
+    
+  <h1 class="main-title-plos">Formúlarios</h1>
+  <p class="standout">Exemplos e diretrizes de uso para estilos de controle de formulário, opções de layout e componentes personalizados para criar uma grande variedade de formulários.</p>
+    
+<h2>Visão geral</h2>
+
+<p>Os controles de formulário do Bootstrap expandem nossos estilos de formulário Rebootados com as classes. Use essas classes para optar por exibições personalizadas para obter uma renderização mais consistente em navegadores e dispositivos.</p>
+
+<p>Certifique-se de usar um atributo de tipo apropriado em todas as entradas (por exemplo, e-mail para endereço de e-mail ou número para informações numéricas) para aproveitar os controles de entrada mais recentes, como verificação de email, seleção de número e muito mais.</p>
+
+<p>Aqui está um exemplo rápido para demonstrar os estilos de formulário do Bootstrap. Continue lendo para obter documentação sobre as classes exigidas, o layout do formulário e muito mais.</p>
+    
+<div class="example">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>    
+</div>
+    
+<h3>Controles de formulários</h3>
+<div class="example">
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>    
+</div>
+    
+<p>Para entradas de arquivo, troque o controle .form para o arquivo .form-control.</p>
+    
+<div class="example">
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Example file input</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+</form>
+</div>
+    
+<h2>Tamanho</h2>
+<p>Defina altura de seus inputs usando as classes globais como .size-sm ou .size-lg.</p>
+    
+<div class="example">
+    <input class="form-control size-lg" type="text" placeholder=".size-lg">
+<input class="form-control" type="text" placeholder="Default input">
+<input class="form-control size-sm" type="text" placeholder=".size-sm">
+</div>
+    
+    
+<div class="example">
+<select class="form-control size-lg">
+  <option>Large select</option>
+</select>
+<select class="form-control">
+  <option>Default select</option>
+</select>
+<select class="form-control size-sm">
+  <option>Small select</option>
+</select>    
+</div>
+    
+<h2>Readonly</h2>
+<p>Adicione o atributo booleano readonly em um campo de texto para evitar a modificação do valor. Os campos de somente leitura aparecem mais claros (como campos desabilitados), mas mantêm o cursor padrão.</p>
+<div class="example">
+   <input class="form-control" type="text" placeholder="Readonly input here…" readonly> 
+</div>    
+    
+<h2>Readonly plain text</h2>
+<p>Se você quer ter elementos &lt;input readonly&gt; em seu projeto como texto simples, use a classe .form-control-plaintext para remover o estilo de campo de formulário padrão e preservar a margem e preenchimento corretos..</p>
+<div class="example">
+<form>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+  </div>
+</form>
+</div>    
+<div class="example">
+<form class="form-inline">
+  <div class="form-group mb-2">
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+</form>    
+</div>
+    
+  
+<h2>Checkboxes e radios</h2>
+<h3>Default (stacked)</h3>
+<p>Por padrão, qualquer número de checkbox(s) e radios que são irmãos imediatos serão empilhados verticalmente e apropriadamente espaçados com a classe .form-check.</p>
+<div class="example">
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Default checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+  <label class="form-check-label" for="defaultCheck2">
+    Disabled checkbox
+  </label>
+</div>    
+</div>
+    
+<div class="example">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Second default radio
+  </label>
+</div>
+<div class="form-check disabled">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+  <label class="form-check-label" for="exampleRadios3">
+    Disabled radio
+  </label>
+</div>    
+</div>
+    
+<h3>Inline</h3>
+<p>Deixe checkbox(s) ou radios na mesma linha adiciona a classe .form-check-inline nos elementos que possuam a classe .form-check.</p>
+<div class="example">
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+  <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+</div>
+</div>
+    
+<h2>Layout</h2>
+<p>São aplicados display: block e width: 100% na maioria dos elementos do NUIverse, porém nos formulários os itens serão organizados verticamente por padrão, veja os exemplos abaixo.</p>
+<h3>Form groups</h3>
+<p>A classe .form-group é a maneira mais fácil de adicionar alguma estrutura aos formulários. Ele fornece uma classe flexível que incentiva o agrupamento adequado de rótulos, controles, texto de ajuda opcional e mensagens de validação de formulário. Por padrão, ele aplica apenas margem-inferior, mas eleva estilos adicionais em .form-inline conforme necessário. Use-o com &lt;fieldset&gt; s, &lt;div&gt; s ou quase qualquer outro elemento.</p>
+<div class="example">
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Example label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+  </div>
+</form>    
+</div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+@mixin bkg-degrade($a, $type:'default', $important:'false', $direction:'to bottom'){
+  
+  @if $important == 'true'{
+    $important: '!important';
+  }@else{
+    $important:'';
+  }
+  
+  @if $type == '3d'{
+   background: linear-gradient(#{$direction}, $a, darken($a, 10% ), lighten($a, 10% )) #{$important}; //3d fx 
+  }
+  @else if $type == '3d-disabled'{
+    background: linear-gradient(#{$direction}, $a, lighten($a, 30% ), lighten($a, 20% )) #{$important}; //3d fx disabled
+  }
+  @else if $type == 'flat'{
+    background: $a #{$important}; //Flat background...
+  }
+  @else if $type == 'flat-disabled'{
+    background: lighten($a, 20%) #{$important}; //Falt disabled...
+  }
+  @else if $type == 'disabled'{
+    background: linear-gradient(#{$direction}, lighten($a, 20% ), lighten($a, 30% )) #{$important}; //Default disabled
+  }
+  @else{
+    background: linear-gradient(#{$direction}, darken($a, 10% ), lighten($a, 10% )) #{$important}; //Default gradient
+  }   
+}

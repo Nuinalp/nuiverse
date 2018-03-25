@@ -1,0 +1,63 @@
+//Badges
+
+//Style Base
+
+.badge{
+  display: inline-block;
+  vertical-align: baseline;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $Default;
+  @extend %default; //Include the default size font.
+  color: #fff;
+  font-size: 80%;
+  padding: 4px 8px;
+  border-radius: $border-radius;
+  @extend %shadown-default;
+  margin: 0 0 0 4px;
+}
+
+@each $themeName, $color in $theme-colors{
+  .badge-#{$themeName}{
+    @include bkg-degrade($color, 'default');
+    @if $themeName == 'link'{
+        color: $GrayText;
+    }
+    @else if $themeName == 'white'{
+      color: $GrayText;
+    }
+    @else{
+      color: #fff;
+    }
+  }
+  
+  .badge-3d-#{$themeName} {
+    @include bkg-degrade($color, '3d');
+    
+    @if $themeName == 'link'{
+        color: $GrayText;
+    }
+    @else if $themeName == 'white'{
+      color: $GrayText;
+    }
+    @else{
+      color: #fff;
+    }
+  }
+  
+  .badge-flat-#{$themeName} {
+    @include bkg-degrade($color, 'flat');
+    
+    @if $themeName == 'link'{
+        color: $GrayText;
+    }
+    @else if $themeName == 'white'{
+      color: $GrayText;
+    }
+    @else{
+      color: #fff;
+    }
+  }
+  
+}

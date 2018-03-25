@@ -1,0 +1,15 @@
+@each $colorName, $color in $theme-colors {
+  .border-#{$colorName}{
+    border-color: $color !important;
+  }
+}
+
+.border-transparent {
+  border-color: transparent !important;
+}
+
+//Remove paddings
+.fluid{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}

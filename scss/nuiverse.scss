@@ -1,0 +1,55 @@
+/*Teste*/
+/**
+* Copyright (c) 2018 The Nuinalp Authors. All rights reserved.
+* Use of this source code is governed by a BSD-style license that can be
+* found in the LICENSE file.
+*/
+
+//
+//NUIverse master engine include
+//
+
+//Import modules
+@import "_variables";
+@import "_reset";
+@import "_mixins";
+@import "_utils";
+@import "_global-settings";
+@import "_buttons";
+@import "_badges";
+@import "_breadcrumb";
+@import "_cards";
+@import "_typography";
+@import "_list";
+@import "_alerts";
+@import "_progressbar";
+@import "_form";
+@import "_input-group";
+@import "_jumbovision";
+@import "_grid";
+
+//Test for example beta pages
+body{
+padding: 10px;
+  max-width: 899px;
+}
+
+#code-show{
+padding: 10px;
+background: rgb(227,227,227);
+margin: 20px 0;
+}
+#code-show span{
+display: block;
+margin: 0 0 8px 0;
+}
+
+.example{
+  position: relative;
+  padding: 14px;
+  margin: 1rem 0 0 0;
+  border: solid #f7f7f9;
+  border-width: 4px;
+  width: calc(100% - 22px);
+  border-radius: $border-radius;
+}

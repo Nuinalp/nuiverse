@@ -1,0 +1,110 @@
+.input-group-text{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .375rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.input-group{
+ position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;   
+}
+
+.input-group-prepend{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -1;
+  
+  .input-group-text, .btn{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    border-right: 0;
+    margin: 0;
+
+    &:not(:first-child){
+      border-radius: 0;
+    }
+  
+  }
+  
+}
+
+.input-group-append{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -1;
+  
+  .input-group-text, .btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    border-left: 0;
+    margin: 0;
+    
+    &:not(:last-child){
+      border-radius: 0;
+    }
+
+  }
+  
+  
+  
+}
+
+.input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child), .input-group > .custom-file:not(:first-child) .custom-file-label{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group > .custom-select:not(:last-child), .input-group > .form-control:not(:last-child), .input-group > .custom-file:not(:last-child) .custom-file-label{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; 
+}
+
+.input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control{
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+
+.input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .form-control{
+  @extend %size-sm;
+}
+
+.input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .form-control{
+  @extend %size-lg;
+}
+
+.input-group > .custom-file + .custom-file, .input-group > .custom-file + .custom-select, .input-group > .custom-file + .form-control, .input-group > .custom-select + .custom-file, .input-group > .custom-select + .custom-select, .input-group > .custom-select + .form-control, .input-group > .form-control + .custom-file, .input-group > .form-control + .custom-select, .input-group > .form-control + .form-control{
+  margin-left: -1px;
+}
+

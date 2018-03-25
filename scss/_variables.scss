@@ -1,0 +1,228 @@
+//
+//The variables
+//
+
+//
+//Font base for reset
+//
+
+$font-weight: 14px;
+$line-heigth: 1.15;
+$line-heigth-body: 1.5;
+
+//
+//Border radius
+//
+$border-radius: 20px;
+$border-radius-m: 8px;
+
+
+
+//
+//Paddings
+//
+
+$padding-y: 12px;
+$padding-x: 14px;
+
+$padding-sm-y: 4px;
+$padding-sm-x: 8px;
+
+//Padding medium size
+$padding-lg-y: 14px;
+$padding-lg-x: 16px;
+
+//Padding large size
+$padding-elg-y: 24px;
+$padding-elg-x: 26px;
+
+
+$padding-big-y: 56px;
+$padding-big-x: 28px;
+
+$padding-mark: 4px;
+
+//
+//Margins
+//
+
+$margin-y: 12px;
+$margin-x: 14px;
+
+$margin-sm-y: 4px;
+$margin-sm-x: 8px;
+
+$margin-md-y: 18px;
+$margin-md-x: 20px;
+
+$margin-lg-y: 24px;
+$margin-lg-x: 26px;
+
+//Colors
+$GrayText: rgb(64,64,64);
+
+//Themes
+$Default:   rgb(127, 127, 127) !default;
+$Primary:   rgb(0, 112, 192) !default;
+$Secondary: rgb(74, 142, 203) !default;
+$Danger:    rgb(226, 62, 50) !default;
+$Info:      rgb(127, 127, 127) !default;
+$Warning:   rgb(255, 152, 0) !default;
+$Success:   rgb(112, 173, 71) !default;
+$Selected:  rgb(255,255,255) !default;
+$Link:      rgb(255,255,255) !default;
+$Dark:      rgb(40,40,40) !default;
+$White:     rgb(255,255,255) !default;
+
+$text-muted:  rgb(127, 127, 127) !default;
+
+//
+//Links
+//
+
+$link-color:  rgb(0, 112, 192) !default;
+$link-color-hover:  rgb(0, 100, 162) !default;
+
+$link-decoration:       none;
+$link-decoration-hover: underline;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "default":     $Default,
+  "primary":     $Primary,
+  "secondary":   $Secondary,
+  "danger":      $Danger,
+  "info":        $Info,
+  "warning":     $Warning,
+  "success":     $Success,
+  "selected":    $Selected,
+  "link":        $Link,
+  "dark":        $Dark,
+  "white":        $White,
+), $theme-colors);
+
+//Transitions
+$btn-transition: "500ms";
+
+//
+// Fonts
+//
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+//Font
+$font-size-base: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-sm: 12px;
+//Line-height
+$btn-line-height: 1.15;
+//Base color font
+$default-color: rgb(30,30,30);
+
+//
+// Headings
+//
+
+$headings-margin-y:           $margin-y !default;
+$headings-padding-y:          $padding-y !default;
+$headings-font-weight:        400 !default;
+$headings-line-height:        1.2;
+$headings-color:              $default-color;
+
+$SizeHeadings: () !default;
+$SizeHeadings: map-merge((
+  'h1': 35px,
+  'h2': 31px,
+  'h3': 27px,
+  'h4': 23px,
+  'h5': 19px,
+  'h6': 15px,
+), $SizeHeadings);
+
+//
+// Main titles
+//
+
+$main-title-margin-y:       $margin-x * 2 !default;
+$main-title-padding-y:      $padding-y !default;
+$main-title-font-weight:    300 !default;
+$headings-line-height:      1.2;
+
+$SizeMainTitle: () !default;
+$SizeMainTitle: map-merge((
+  'main-title-1': map-get($SizeHeadings, 'h1') * 2,
+  'main-title-2': map-get($SizeHeadings, 'h2') * 2,
+  'main-title-3': map-get($SizeHeadings, 'h3') * 2,
+  'main-title-4': map-get($SizeHeadings, 'h4') * 2,
+  'main-title-5': map-get($SizeHeadings, 'h5') * 2,
+  'main-title-6': map-get($SizeHeadings, 'h6') * 2,
+), $SizeMainTitle);
+
+
+//
+//List
+//
+
+//Type list
+
+$StyleList: ();
+$StyleList: map-merge((
+  '1':  armenian,
+  '2':  cjk-ideographic,
+  '3':  decimal,
+  '4':  decimal-leading-zero,
+  '5':  georgian,
+  '6':  hebrew,
+  '7':  hiragana,
+  '8':  hiragana-iroha,
+  '9':  katakana,
+  '10': katakana-iroha,
+  '11': lower-alpha,
+  '12': lower-greek,
+  '13': lower-latin,
+  '14': lower-roman,
+  '15': none,
+  '16': upper-alpha,
+  '17': upper-greek,
+  '18': upper-latin,
+  '19': upper-roman,
+  '20': initial,
+  '21': disc,
+  '22': circle,
+  '23': none,
+  '24': square,
+), $StyleList);
+
+//
+//Global Size Width and height
+//
+
+// This variable for global classes Width and height
+$sizes: () !default;
+$sizes: map-merge((
+  0: 0%,
+  5: 5%,
+  10: 10%, 
+  15: 15%, 
+  20: 20%, 
+  25: 25%,
+  30: 30%, 
+  35: 35%, 
+  40: 40%, 
+  45: 45%, 
+  50: 50%,
+  55: 55%, 
+  60: 60%, 
+  65: 65%, 
+  70: 70%, 
+  75: 75%,
+  80: 80%, 
+  85: 85%, 
+  90: 90%, 
+  95: 95%, 
+  100: 100%,
+  auto: auto
+), $sizes);

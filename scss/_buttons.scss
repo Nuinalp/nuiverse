@@ -1,0 +1,277 @@
+//Buttons
+
+//Style base
+.btn{
+  //Default base
+  display: inline-block;
+  position: relative;
+
+  //Align base
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  
+  //Remove user select
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  background-color: $Default;
+  border: 1px solid $Default;
+  color: white;
+  cursor: default;
+  margin: 0 4px 4px 0;
+  
+  @include button-size($padding-y, $padding-x, $font-size-base, $btn-line-height, $border-radius);
+  @include transition(200, #{"default"});
+  @extend %default; //Include the default size font.
+  @extend %shadown-default;
+  
+  &::before{
+    @extend %fx-content;
+  }
+
+  &:hover{
+    background: $Selected;
+    color: $GrayText;
+  }
+
+  //Disable button
+  &.disabled, &:disabled{
+   cursor: not-allowed;
+  }
+
+  span{
+    z-index: 2;
+    position: relative;
+    cursor: default;
+  }
+  
+  &:active{
+    transform: scale(0.8);
+  }  
+
+  &:not(:active){
+    transform: scale(1);
+  }    
+}
+
+.btn-circle, .btn-outline-circle{
+  border-radius: 100%;
+  height: 90px;
+  width: 90px;
+  padding: $padding-y 0;
+}
+
+//
+// Style colors buttons
+//
+
+@each $themeName, $value in $theme-colors {
+  
+  .btn-3d-#{$themeName} {
+    @include bkg-degrade($value, '3d');
+    border:1px solid $value;
+    //Disable button
+    &.disabled, &:disabled{
+     @include bkg-degrade($value, '3d-disabled');
+      color: $White;
+    }
+  }
+  
+  .btn-flat-#{$themeName} {
+    @include bkg-degrade($value, 'flat');
+    border:1px solid $value;
+    //Disable button
+    &.disabled, &:disabled{
+     @include bkg-degrade($value, 'flat-disabled');
+      color: $White;
+    }
+  }
+  
+  .btn-#{$themeName} {
+    border:1px solid $value;
+    @include bkg-degrade($value);
+    
+    //Disable button
+    &.disabled, &:disabled{
+     @include bkg-degrade($value, 'disabled');
+      color: $White;
+    }
+    
+    &:after{
+      @include fx-btn-click($value, #{'circle'});
+    }
+    
+    &:not(:active):hover::after{
+      @include transition(200, #{"fx-btn-hover"});
+    }
+  
+    &:active:hover::after{
+      @include transition(200, #{"click-btn"});
+    }   
+
+    &:hover:after{
+      @include transition(200, #{"fx-btn-hover"});
+    }
+    
+    @if $themeName == 'link'{
+      &:hover span{
+        text-decoration: underline;
+      }
+      span {
+        color: $GrayText;
+      }
+    }
+    @else if $themeName == 'dark'{
+      &:hover span{
+        color: $Dark;
+      }
+      span {
+        color: $White;
+      }
+    }
+    
+  }
+
+  .btn-outline-#{$themeName}, .btn-outline-circle.btn-#{$themeName} {
+    
+    border:1px solid $value;
+    @include bkg-degrade(#fff);
+    color: $value;
+    
+    &:after{
+      @include fx-btn-click($value, #{'circle'});
+    }
+    
+    &:not(:active):hover::after{
+      @include transition(200, #{"fx-btn-hover"});
+    }
+  
+    &:active:hover::after{
+      @include transition(200, #{"click-btn"});
+    }   
+
+    &:hover:after{
+      @include transition(200, #{"fx-btn-hover"});
+    }
+
+      span{
+        color:$value;
+      }
+    
+    @if $themeName == 'link'{
+      &:hover span{
+        text-decoration: underline;
+      }
+      span {
+        color: $GrayText;
+      }
+    }
+    @else if $themeName == 'dark'{
+      &:hover span{
+        color: $Dark;
+      }
+      span {
+        color: $Dark;
+      }
+    }
+  }
+
+}
+
+.btn-group{
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  .btn{
+    margin: 0 -1px 4px 0;
+  }
+  .btn:not(:first-child):not(:last-child){
+    @extend .obj-br-n;
+  }
+  
+  .btn:first-child:not(:last-child){
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .btn:last-child:not(:first-child){
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.btn-group-vertical{
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  
+  .btn{
+    margin: 0 0 -1px 0;
+    width: 100%;
+    display: block;    
+  }
+  .btn:not(:first-child):not(:last-child){
+    @extend .obj-br-n;
+  }
+  
+  .btn:first-child:not(:last-child){
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .btn:last-child:not(:first-child){
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+
+.btn-group-circle{
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.btn-group-circle-vertical{
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.btn-group-lg .btn{
+  @extend %size-lg;
+}
+
+.btn-group-sm .btn{
+  @extend %size-sm;
+}
