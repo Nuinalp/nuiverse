@@ -6,6 +6,7 @@
 </p>
 
 <h2>About</h2>
+
 <p>NUIverse is an BSD 3 Clause open source project under development. A progressive framework in javascript and modern css for building rich web interfaces based on Nuinalp Design.</p>
 
 ### Current version
@@ -29,6 +30,7 @@ Detailed changes for each release are documented in the [release notes](https://
 - <https://github.com/thanakin>
 
 <hr>
+
 <h2>License</h2>
 
 [BSD Clause 3](https://opensource.org/licenses/BSD-3-Clause)
