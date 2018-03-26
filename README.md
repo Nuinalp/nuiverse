@@ -5,14 +5,16 @@
   <img src="https://img.shields.io/badge/Build-Alpha-blue.svg" alt="Version"/>
 </p>
 
-### Summary
-
 <h2>About</h2>
 <p>NUIverse is an BSD 3 Clause open source project under development. A progressive framework in javascript and modern css for building rich web interfaces based on Nuinalp Design.</p>
 
-#### Current version
+### Current version
 
 <p>This version is a alpha v0.0.1 preview. In this version does not have documentation and example codes. The official documentation is coming soon.</p>
+
+## Changelog
+
+Detailed changes for each release are documented in the [release notes](https://github.com/nuinalp/nuiverse/releases).
 
 ## Creators
 
