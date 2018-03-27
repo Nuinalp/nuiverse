@@ -19,7 +19,7 @@ Build these sites with pure CSS was a big job, we couldn't use Bootstrap on time
 
 On this issue, we decided to create our own framework using our design language, the Nuinalp Design, assisting in our projects, mainly in the development of the Plánium, our operating system.
 
-With the NUIverse it will be possible to create web pages with a visual amazing, following our design language, but at the same time respect their standards, offering in this way numerous customization possibilities. In addition, you will be able to have a friendly and powerful front end, thus eliminating the need of using various javascript frameworks to build dynamic pages. With only two libraries, you will have everything you need to build any Web page in addition to enjoy advanced technologies and optimized:-).
+With the NUIverse it will be possible to create web pages with a visual amazing, following our design language, but at the same time respect their standards, offering in this way numerous customization possibilities. In addition, you will be able to have a friendly and powerful front end, thus eliminating the need of using various javascript frameworks to build dynamic pages. With only two libraries, you will have everything you need to build any Web page in addition to enjoy advanced technologies and optimized :-).
 
 ### Current version
 
@@ -42,7 +42,7 @@ Detailed changes for each release are documented in the [release notes](https://
 - <https://github.com/thanakin>
 
 ## Support
-Support NUIverse at [Patreon](https://www.patreon.com/nuinalp) to help sustain project development. If you or your company uses or depends on our project, why not help us with a donation? We work in open source for free to help everyone achieve more. Access Patreon, make your contribution and support this project :-)
+Support NUIverse at [Patreon](https://www.patreon.com/nuinalp) to help sustain project development. If you or your company uses or depends on our project, why not help us with a donation? We work in open source for free to help everyone achieve more. Access Patreon, make your contribution and support this project :-).
 
 <hr>
 
