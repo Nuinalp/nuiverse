@@ -1,9 +1,8 @@
 //Mixins
 
-@mixin button-size($padding-y, $padding-x, $font-size-base, $btn-line-height, $btn-border-radius){
+@mixin button-size($padding-y, $padding-x, $font-size-base,  $btn-border-radius){
   
   padding: $padding-y $padding-x;
-  line-height: $btn-line-height;
   font-size: $font-size-base;
     
   @if($btn-border-radius){
@@ -65,6 +64,6 @@
 }
 
 %default{
-  font-weight: $font-weight;
-  line-height: $line-heigth;
+  font-weight: $font-weight-base;
+  line-height: $line-heigth-body;
 }

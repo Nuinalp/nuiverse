@@ -19,7 +19,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 //Prevent adjustments of font size after orientation changes in iOS.
 
 html{
-  line-height: $line-heigth;
+  line-height: $line-height-base;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -134,7 +134,6 @@ input[type=text], input[type=file], input[type=email], input[type=password], sel
   border: 1px solid lighten($Dark, 60%);
   padding: $padding-y $padding-x;
   font-size: $font-size-base;
-  line-height: $btn-line-height;
   transition: all ease 500ms;
   margin-bottom: $margin-sm-y;
   display: inline-block;

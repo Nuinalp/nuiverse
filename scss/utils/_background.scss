@@ -1,3 +1,7 @@
+//
+// Background colors
+//
+
 @each $colorName, $color in $theme-colors {
   .bkg-#{$colorName}{
     @include bkg-degrade($color, 'default', 'true');
@@ -18,4 +22,12 @@
 
 .bkg-transparent {
   background: transparent !important;
+}
+
+//Colors for texts
+
+@each $themeName, $value in $theme-colors{
+  .text-#{$themeName}, .text-#{$themeName} *{
+    color: $value !important;
+  }
 }

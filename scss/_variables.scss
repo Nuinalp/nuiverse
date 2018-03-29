@@ -3,20 +3,10 @@
 //
 
 //
-//Font base for reset
-//
-
-$font-weight: 14px;
-$line-heigth: 1.15;
-$line-heigth-body: 1.5;
-
-//
 //Border radius
 //
 $border-radius: 20px;
 $border-radius-m: 8px;
-
-
 
 //
 //Paddings
@@ -58,6 +48,24 @@ $margin-md-x: 20px;
 $margin-lg-y: 24px;
 $margin-lg-x: 26px;
 
+// Spacing
+//
+// Map containing variances of sizes focused on the spacing of the elements of the NUIverse. 
+// You can add more variants if you //need to.
+
+// Default space value, is the same font size
+$spacer: 14px !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+), $spacers);
+
+
 //Colors
 $GrayText: rgb(64,64,64);
 
@@ -73,6 +81,36 @@ $Selected:  rgb(255,255,255) !default;
 $Link:      rgb(255,255,255) !default;
 $Dark:      rgb(40,40,40) !default;
 $White:     rgb(255,255,255) !default;
+
+
+//$blue:    rgb(0, 112, 192) !default;
+//$indigo:  #6610f2 !default;
+//$purple:  #6f42c1 !default;
+//$pink:    #e83e8c !default;
+//$red:     #dc3545 !default;
+//$orange:  #fd7e14 !default;
+//$yellow:  #ffc107 !default;
+//$green:   #28a745 !default;
+//$teal:    #20c997 !default;
+//$cyan:    #17a2b8 !default;
+//$white:    rgb(255,255,255);
+//
+//$colors: () !default;
+//$colors: map-merge((
+//  "blue":       $blue,
+//  "indigo":     $indigo,
+//  "purple":     $purple,
+//  "pink":       $pink,
+//  "red":        $red,
+//  "orange":     $orange,
+//  "yellow":     $yellow,
+//  "green":      $green,
+//  "teal":       $teal,
+//  "cyan":       $cyan,
+//  "white":      $white,
+//  "gray":       $gray-600,
+//  "gray-dark":  $gray-800
+//), $colors);
 
 $text-muted:  rgb(127, 127, 127) !default;
 
@@ -117,10 +155,18 @@ $font-size-base: 14px;
 $font-size-md: 16px;
 $font-size-lg: 18px;
 $font-size-sm: 12px;
-//Line-height
-$btn-line-height: 1.15;
+
+//Font Weight
+$font-weight-light:   300 !default;
+$font-weight-normal:  400 !default;
+$font-weight-bold:    700 !default;
+
+$font-weight-base:    $font-weight-normal !default;
+$line-height-base:    1.15 !default;
+$line-heigth-body:    1.5;
+
 //Base color font
-$default-color: rgb(30,30,30);
+$font-color-base: rgb(30,30,30);
 
 //
 // Headings
@@ -130,7 +176,7 @@ $headings-margin-y:           $margin-y !default;
 $headings-padding-y:          $padding-y !default;
 $headings-font-weight:        400 !default;
 $headings-line-height:        1.2;
-$headings-color:              $default-color;
+$headings-color:              $font-color-base;
 
 $SizeHeadings: () !default;
 $SizeHeadings: map-merge((
@@ -226,3 +272,14 @@ $sizes: map-merge((
   100: 100%,
   auto: auto
 ), $sizes);
+
+
+// Z-index master list
+
+$zindex-dropdown:                   2000 !default;
+$zindex-sticky:                     2020 !default;
+$zindex-fixed:                      2030 !default;
+$zindex-modal-backdrop:             2040 !default;
+$zindex-modal:                      2050 !default;
+$zindex-popover:                    2060 !default;
+$zindex-tooltip:                    2070 !default;

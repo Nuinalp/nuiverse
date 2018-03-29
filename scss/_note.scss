@@ -1,0 +1,13 @@
+.nv-note{
+  border-radius: $border-radius;
+  padding: $padding-y $padding-x;
+  border: 1px solid $Warning;
+  border-left-width: 6px;
+  margin: $margin-sm-x 0;
+  background-color: lighten($Warning, 43%);
+  @extend %shadown-default;
+  
+  p{
+    margin: 0;
+  }
+}

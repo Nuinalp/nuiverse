@@ -1,0 +1,74 @@
+.nav{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+
+.nav-link{
+  display: block;
+  padding: $padding-y $padding-x;
+}
+
+.nav-link.disabled{
+  color: $text-muted !important; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-tabs {
+  
+  border-bottom: 1px solid lighten($Dark, 75%);
+  
+  .nav-item{
+    margin-bottom: -1px;
+  }  
+  
+  .nav-link{
+    border: 1px solid transparent;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+  
+  .nav-link.active{
+    border: 1px solid lighten($Dark, 75%);
+    border-bottom-color: transparent;
+    background-color: $White;
+  }
+}
+
+
+.nav-pills {
+  
+  .nav-link.active{
+    color: $White;
+    background-color: $Primary;
+  }
+  
+  .nav-link{
+    border-radius: $border-radius;
+  }
+  
+}
+
+//
+// Justified variants
+//
+
+.nav-fill{
+  .nav-item{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;  
+  }
+}
+
+.nav-justified {
+  .nav-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+}

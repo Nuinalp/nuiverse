@@ -1,0 +1,17 @@
+{
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
+    "path": {
+      "scss/nuiverse.scss": {
+          "sass.enabled": true,
+          "sass.options": {
+            "outputDir": "../css/",
+            "output": "nuiverse.css",
+            "imagePath": null,
+            "sourceComments": false,
+            "outputStyle": "nested"
+          },
+        "linting.collapsed": false
+        }
+    }
+}

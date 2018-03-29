@@ -12,11 +12,17 @@
   @extend %default; //Include the default size font.
   color: #fff;
   font-size: 80%;
-  padding: 4px 8px;
+  padding: 4px 6px;
   border-radius: $border-radius;
   @extend %shadown-default;
   margin: 0 0 0 4px;
+  min-width: 24px;
+  min-height: 24px;
 }
+
+//
+//Theme badges
+//
 
 @each $themeName, $color in $theme-colors{
   .badge-#{$themeName}{
