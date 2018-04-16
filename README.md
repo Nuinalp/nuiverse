@@ -1,8 +1,8 @@
 <p align="center"><img src="https://raw.githubusercontent.com/Nuinalp/nuiverse/master/nuiverse-logo.png" alt="NUIverse logo" width="300"/></p>
 <p align="center">
   <a href="https://github.com/Nuinalp/nuiverse/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-BSD-blue.svg" alt="License"/></a>
-  <img src="https://img.shields.io/badge/Version-0.0.1-green.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/Build-Alpha-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-0.0.8-green.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/Build-Beta-blue.svg" alt="Version"/>
 </p>
 
 <<<<<<< HEAD
@@ -30,7 +30,7 @@ With the NUIverse it will be possible to create web pages with a visual amazing,
 
 ### Current version
 
-This version is a alpha v0.0.1 preview. In this version does not have documentation and example codes. The official documentation is coming soon.
+This version is a alpha v0.0.8 beta. In this version does not have documentation and example codes. The official documentation is coming soon.
 
 ## Changelog
 
@@ -62,4 +62,4 @@ Support NUIverse at [Patreon](https://www.patreon.com/nuinalp) to help sustain p
 [BSD Clause 3](https://opensource.org/licenses/BSD-3-Clause)
 
 <p>Copyright (c) 2018 The Nuinalp Authors. All rights reserved.<br>
- Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.</p>
+Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.</p>

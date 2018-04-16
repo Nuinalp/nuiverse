@@ -2,9 +2,11 @@
 
 //Components
 @import "mixins/transitions";
+@import "mixins/breakpoints";
 @import "mixins/colors-bkgs";
 @import "mixins/utils-global";
 @import "mixins/buttons";
+@import "mixins/clearfix";
 @import "mixins/badges";
 @import "mixins/list";
 @import "mixins/flex";
@@ -12,4 +14,6 @@
 @import "mixins/positions";
 @import "mixins/size";
 @import "mixins/resize";
+@import "mixins/grid-system-factory";
+@import "mixins/grid-system-helper";
 //@import "mixins/display";

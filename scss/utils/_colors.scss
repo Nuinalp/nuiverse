@@ -1,5 +1,9 @@
 //
-// Background colors
+// Global colors, for text and backgrounds.
+//
+
+//
+// Backgrounds
 //
 
 @each $colorName, $color in $theme-colors {
@@ -24,10 +28,21 @@
   background: transparent !important;
 }
 
-//Colors for texts
+//
+// Colors for texts
+//
 
 @each $themeName, $value in $theme-colors{
   .text-#{$themeName}, .text-#{$themeName} *{
-    color: $value !important;
+    color: $value;
   }
+}
+
+//Variants for colors White and Dark
+.text-white-50, .text-white-50 *{
+  color: darken($White, 50%);
+}
+
+.text-black-50, .text-black-50 *{
+  color: lighten($Black, 50%);
 }

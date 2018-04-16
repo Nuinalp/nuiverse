@@ -5,17 +5,14 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: .375rem .75rem;
+  padding: $padding-sm-y $padding-y;
   margin-bottom: 0;
-  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
+  color: $Default;
   text-align: center;
   white-space: nowrap;
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
+  background-color: darken($White, 10%);
+  border: 1px solid lighten($Dark, 60%);
 }
 
 .input-group{
@@ -37,7 +34,7 @@
   display: flex;
   margin-right: -1;
   
-  .input-group-text, .btn{
+  .input-group-text, .button{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-top-left-radius: $border-radius;
@@ -50,7 +47,6 @@
     }
   
   }
-  
 }
 
 .input-group-append{
@@ -59,7 +55,7 @@
   display: flex;
   margin-left: -1;
   
-  .input-group-text, .btn{
+  .input-group-text, .button{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: $border-radius;
@@ -72,9 +68,6 @@
     }
 
   }
-  
-  
-  
 }
 
 .input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child), .input-group > .custom-file:not(:first-child) .custom-file-label{

@@ -16,6 +16,10 @@
 @each $SizeSpacer, $valueSize in $spacers{
   
   //Margins
+  .m-#{$SizeSpacer}{
+    margin: $valueSize !important;
+  }
+  
   .mb-#{$SizeSpacer}, .my-#{$SizeSpacer}{
     margin-bottom: $valueSize !important;
   }
@@ -33,7 +37,7 @@
   }
   
   //Margin auto
-    .mb-auto, .my-auto{
+  .mb-auto, .my-auto{
     margin-bottom: auto !important;
   }
   
@@ -50,6 +54,10 @@
   }
   
   //Paddings
+  
+  .p-#{$SizeSpacer}{
+    padding: $valueSize !important;
+  }
   
   .pb-#{$SizeSpacer}, .py-#{$SizeSpacer}{
     padding-bottom: $valueSize !important;
