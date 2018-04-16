@@ -12,12 +12,12 @@
   @extend %default; //Include the default size font.
   color: #fff;
   font-size: 80%;
-  padding: 4px 6px;
+  padding: $padding-sm-y;
   border-radius: $border-radius;
   @extend %shadown-default;
-  margin: 0 0 0 4px;
-  min-width: 24px;
-  min-height: 24px;
+  margin-left: $margin-sm-y;
+  min-width: 26px;
+  min-height: 26px;
 }
 
 //

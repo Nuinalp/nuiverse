@@ -13,10 +13,17 @@
   white-space: nowrap; 
 }
 
-.text-left   { text-align: left !important; }
-.text-right  { text-align: right !important; }
-.text-center { text-align: center !important; }
+//Create responsive displays
+@each $bpName in map-keys($global-breakpoints) {
 
+  $checkName: bpHelper($bpName, 'check', '-');
+
+  @include media-breakpoint-min($bpName) {
+    .text-left#{$checkName}   { text-align: left !important; }
+    .text-right#{$checkName}  { text-align: right !important; }
+    .text-center#{$checkName} { text-align: center !important; }
+  }
+}
 // Transformation
 
 .text-lowercase  { text-transform: lowercase !important; }
@@ -27,6 +34,7 @@
 
 .font-weight-normal { font-weight: $font-weight-normal !important; }
 .font-weight-bold   { font-weight: $font-weight-bold !important; }
+.font-weight-light   { font-weight: $font-weight-light !important; }
 .font-italic        { font-style: italic !important; }
 
 .text-muted { color: $text-muted !important; }

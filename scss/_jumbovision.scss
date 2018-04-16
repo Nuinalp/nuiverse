@@ -2,4 +2,15 @@
   background-color: darken($White, 5%);
   padding: $padding-big-y $padding-big-x;
   border-radius: $border-radius;
+  
+  hr{
+    background-color: darken($White, 15%);
+  }
+  
+  //Remove paddings
+  &.fluid{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  
 }

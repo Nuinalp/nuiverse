@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6,
 .main-title-plos{
   border-bottom: 1px solid $font-color-base;
   padding-bottom: $main-title-padding-y;
-  margin: $main-title-margin-y 0;
+  margin-bottom: $main-title-margin-y;
 }
 
 //
@@ -154,3 +154,36 @@ ul{
   }
 }
 
+kbd, code{
+  background-color: darken($White, 10%);
+  padding: 4px 6px;
+}
+
+//
+//Abbr
+//
+abbr, abbr[title] {
+    border-bottom: 1px dotted $Default;
+    cursor: help;
+    text-decoration: none;
+}
+
+//
+// Defination list style
+//
+
+dl dt{
+  font-weight: bold;
+  margin-bottom: $padding-sm-y;
+}
+
+//
+//NUIverse hr style
+//
+
+hr{
+  height: 3px;
+  background-color: $Primary;
+  opacity: 1;
+  border-radius: $border-radius;
+}

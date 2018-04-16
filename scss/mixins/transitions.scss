@@ -41,7 +41,7 @@
 
 @keyframes progressbarAnim{
   0% {background-position: 0 0;}
-  100% {background-position: -15rem 0;}
+  100% {background-position: -($font-size-base * 15) 0;}
 }
 
 @keyframes loadingProgressbar{

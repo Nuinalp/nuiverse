@@ -2,18 +2,13 @@
 //The variables
 //
 
-//
-//Border radius
-//
-$border-radius: 20px;
-$border-radius-m: 8px;
 
 //
 //Paddings
 //
 
-$padding-y: 12px;
-$padding-x: 14px;
+$padding-y: 10px;
+$padding-x: 12px;
 
 $padding-sm-y: 4px;
 $padding-sm-x: 8px;
@@ -54,15 +49,22 @@ $margin-lg-x: 26px;
 // You can add more variants if you //need to.
 
 // Default space value, is the same font size
-$spacer: 14px !default;
+$spacer: 16px !default;
 $spacers: () !default;
 $spacers: map-merge((
   0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3)
+  1: ($spacer * .25), //4px
+  2: ($spacer * .5), // 8
+  3: $spacer, // 16px
+  4: ($spacer * 1.5), //24px
+  5: ($spacer * 2), //32
+  6: ($spacer * 2.8), //46px
+  7: round($spacer * 3.3), //54px
+  8: round($spacer * 3.8), //62px
+  9: round($spacer * 4.75), //76px
+  10: round($spacer * 5.25), //84px
+  11: round($spacer * 5.75), //92px
+  12: round($spacer * 6.25) //100px
 ), $spacers);
 
 
@@ -80,6 +82,7 @@ $Success:   rgb(112, 173, 71) !default;
 $Selected:  rgb(255,255,255) !default;
 $Link:      rgb(255,255,255) !default;
 $Dark:      rgb(40,40,40) !default;
+$Black:      rgb(0,0,0)  !default;
 $White:     rgb(255,255,255) !default;
 
 
@@ -136,6 +139,7 @@ $theme-colors: map-merge((
   "selected":    $Selected,
   "link":        $Link,
   "dark":        $Dark,
+  "black":        $Black,
   "white":        $White,
 ), $theme-colors);
 
@@ -151,13 +155,13 @@ $font-family-monospace:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mo
 $font-family-base:       $font-family-sans-serif !default;
 
 //Font
-$font-size-base: 14px;
+$font-size-base: 16px;
 $font-size-md: 16px;
 $font-size-lg: 18px;
 $font-size-sm: 12px;
 
 //Font Weight
-$font-weight-light:   300 !default;
+$font-weight-light:   200 !default;
 $font-weight-normal:  400 !default;
 $font-weight-bold:    700 !default;
 
@@ -283,3 +287,42 @@ $zindex-modal-backdrop:             2040 !default;
 $zindex-modal:                      2050 !default;
 $zindex-popover:                    2060 !default;
 $zindex-tooltip:                    2070 !default;
+
+
+// Global breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$global-breakpoints: (
+  0:          0,
+  small:      576px,
+  medium:     768px, 
+  large:      992px,
+  big-large:  1200px
+) !default;
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:   12;
+
+//
+// Borders
+//
+
+$border-width:   1px !default;
+$border-color:   $Default !default;
+
+// Border radius
+$border-radius: 20px;
+$border-radius-m: 8px;
+
+//Shadows
+$shadowDefault: 0 2px 4px rgba(0, 0, 0, 0.26) !important;
+$shadowSmall: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+$shadowMedium: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+$shadowLarge: 0 8px 20px rgba(0, 0, 0, 0.4) !important;
+$shadowHover: 0 4px 5px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.1) !important;

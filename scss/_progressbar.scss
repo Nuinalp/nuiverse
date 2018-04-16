@@ -2,7 +2,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1rem;
+  height: $font-size-base;
   overflow: hidden;
   font-size: $font-size-base;
   background-color: darken($White, 10%);
@@ -11,9 +11,10 @@
   position: relative;
 
   &.style-plos{
-    background-size: 15rem;
+    background-size: ($font-size-base * 15) ($font-size-base * 15);
+    background-repeat: repeat-x, repeat-y;
     animation: progressbarAnim 1.5s steps(15) infinite;
-    background-image: repeating-linear-gradient( 135deg, darken($White, 10%), darken($White, 10%) 5rem, darken($White, 12%) 5rem, darken($White, 12%) 10rem ) !important;
+    background-image: repeating-linear-gradient( 135deg, darken($White, 10%), darken($White, 10%) ($font-size-base * 5), darken($White, 12%) ($font-size-base * 5), darken($White, 12%) ($font-size-base * 10) ) !important;
   }
 }
 
@@ -54,6 +55,7 @@
     animation: loadingProgressbar 2s infinite;
     position: absolute !important;
     transition: all ease 500ms;
+    transform: translateX(-89%);
   }
 }
 @each $themeName, $value in $theme-colors {
@@ -61,8 +63,9 @@
     @include bkg-degrade(lighten($value, 20%), 'default', 'false', 'to right');
   }  
   .progressbar-#{$themeName}-plos{
-      background-size: 15rem;
-      background-image: repeating-linear-gradient( 135deg, lighten($value, 10%), lighten($value, 10%) 5rem, $value 5rem, $value 10rem );
+      background-size: ($font-size-base * 15) ($font-size-base * 15);
+      background-repeat: repeat-x, repeat-y;
+      background-image: repeating-linear-gradient( 135deg, lighten($value, 10%), lighten($value, 10%) ($font-size-base * 5), $value ($font-size-base * 5), $value ($font-size-base * 10) );
     animation: progressbarAnim 1.5s steps(15) infinite;
   }
 }

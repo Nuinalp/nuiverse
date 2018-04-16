@@ -27,32 +27,7 @@
 @import "_input-group";
 @import "_jumbovision";
 @import "_grid";
-@import "_callouts";
 @import "_note";
 @import "_navs";
-//
-////Test for example beta pages
-//body{
-//padding: 10px;
-//  max-width: 899px;
-//}
-//
-//#code-show{
-//padding: 10px;
-//background: rgb(227,227,227);
-//margin: 20px 0;
-//}
-//#code-show span{
-//display: block;
-//margin: 0 0 8px 0;
-//}
-//
-//.example{
-//  position: relative;
-//  padding: 14px;
-//  margin: 1rem 0 0 0;
-//  border: solid #f7f7f9;
-//  border-width: 4px;
-//  width: calc(100% - 22px);
-//  border-radius: $border-radius;
-//}
+@import "_grid-system";
+@import "_top-bar";

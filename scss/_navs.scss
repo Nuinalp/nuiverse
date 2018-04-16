@@ -4,19 +4,69 @@
   display: flex;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
+  
+  ul{
+    margin-bottom: 0;
+  }
+    
+@each $SizeSpacer, $valueSize in $spacers{
+  //Paddings
+  
+    &.itens-pb-#{$SizeSpacer} .nav-link, &.itens-py-#{$SizeSpacer } .nav-link{
+      padding-bottom: $valueSize !important;
+    }
+
+    &.itens-pt-#{$SizeSpacer} .nav-link, &.itens-py-#{$SizeSpacer } .nav-link{
+      padding-top: $valueSize !important;
+    }  
+
+    &.itens-pl-#{$SizeSpacer} .nav-link, &.itens-px-#{$SizeSpacer } .nav-link{
+      padding-left: $valueSize !important;
+    } 
+
+    &.itens-pr-#{$SizeSpacer} .nav-link, &.itens-px-#{$SizeSpacer } .nav-link{
+      padding-right: $valueSize !important;
+    }
+  
+  }
+  
+  >li ul>li>a{
+    font-size: 90%;
+  }
+  
+  .nav-content{
+    display: none;
+  }
+  
 }
 
 .nav-link{
   display: block;
   padding: $padding-y $padding-x;
-}
+  
+  &.disabled{
+    color: $text-muted !important; 
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  &.active{
+    font-weight: bold;
+    
+    &~.nav-content{
+      display: block !important;
+    }
+  }
+    
+  label{
+    margin-bottom: 0;
+  }
 
-.nav-link.disabled{
-  color: $text-muted !important; 
-  text-decoration: none;
-  cursor: pointer;
+  input[type=checkbox]{
+    display: none;
+  }
+  
 }
-
 .nav-tabs {
   
   border-bottom: 1px solid lighten($Dark, 75%);
@@ -51,6 +101,11 @@
   }
   
 }
+
+  input[type=checkbox]:checked ~ .nav-content{
+    display: block !important;
+  }
+    
 
 //
 // Justified variants

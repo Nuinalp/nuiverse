@@ -5,7 +5,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: $padding-y $padding-x;
-  margin-bottom: 1rem;
+  margin-bottom: $padding-lg-y;
   list-style: none;
   background-color: $White;
   border-radius: $border-radius; 
@@ -20,9 +20,14 @@
         padding: 0 8px;
     }
     
-    &.active{
+    &.current{
       color: $GrayText;
       text-decoration: none;
+    }
+    
+    &.disabled{
+      color: $text-muted;
+      cursor: not-allowed;
     }
     
     a{
