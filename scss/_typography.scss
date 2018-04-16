@@ -8,7 +8,8 @@
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin: $headings-margin-y 0;
+  margin-top: 0;
+  margin-bottom: ($font-size-base * .5);
   font-weight: $headings-font-weight;
 //  line-height: $headings-line-height;
   color: $headings-color;
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .main-title-plos{
-  border-bottom: 1px solid $default-color;
+  border-bottom: 1px solid $font-color-base;
   padding-bottom: $main-title-padding-y;
   margin: $main-title-margin-y 0;
 }

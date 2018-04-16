@@ -21,6 +21,10 @@
       background-color: $Primary !important;
       border-color: $Primary !important;
       color: $White;
+      
+      & *{
+        color: unset;
+      }
     }
   }
   

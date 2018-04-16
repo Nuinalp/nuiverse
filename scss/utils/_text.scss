@@ -6,7 +6,12 @@
 
 .text-justify  { text-align: justify !important; }
 .text-nowrap   { white-space: nowrap !important; }
-//.text-truncate { @include text-truncate; }
+
+.text-truncate { 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
 
 .text-left   { text-align: left !important; }
 .text-right  { text-align: right !important; }
@@ -20,21 +25,17 @@
 
 // Weight and italics
 
-//.font-weight-white  { font-weight: $font-weight-white !important; }
-//.font-weight-normal { font-weight: $font-weight-normal !important; }
-//.font-weight-bold   { font-weight: $font-weight-bold !important; }
+.font-weight-normal { font-weight: $font-weight-normal !important; }
+.font-weight-bold   { font-weight: $font-weight-bold !important; }
 .font-italic        { font-style: italic !important; }
-
-@each $themeName, $value in $theme-colors{
-  .text-#{$themeName}, .text-#{$themeName} *{
-    color: $value !important;
-  }
-}
 
 .text-muted { color: $text-muted !important; }
 
-// Misc
-
+// Hide text
 .text-hide {
-//  @include text-hide();
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }

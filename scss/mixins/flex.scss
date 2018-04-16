@@ -1,0 +1,35 @@
+@mixin flex-row            { flex-direction: row !important; }
+@mixin flex-column         { flex-direction: column !important; }
+@mixin flex-row-reverse    { flex-direction: row-reverse !important; }
+@mixin flex-column-reverse { flex-direction: column-reverse !important; }
+
+@mixin flex-wrap         { flex-wrap: wrap !important; }
+@mixin flex-nowrap       { flex-wrap: nowrap !important; }
+@mixin flex-wrap-reverse { flex-wrap: wrap-reverse !important; }
+@mixin flex-fill         { flex: 1 1 auto !important; }
+
+@mixin justify-content-start   { justify-content: flex-start !important; }
+@mixin justify-content-end     { justify-content: flex-end !important; }
+@mixin justify-content-center  { justify-content: center !important; }
+@mixin justify-content-between { justify-content: space-between !important; }
+@mixin justify-content-around  { justify-content: space-around !important; }
+
+@mixin align-items-start    { align-items: flex-start !important; }
+@mixin align-items-end      { align-items: flex-end !important; }
+@mixin align-items-center   { align-items: center !important; }
+@mixin align-items-baseline { align-items: baseline !important; }
+@mixin align-items-stretch  { align-items: stretch !important; }
+
+@mixin align-content-start   { align-content: flex-start !important; }
+@mixin align-content-end     { align-content: flex-end !important; }
+@mixin align-content-center  { align-content: center !important; }
+@mixin align-content-between { align-content: space-between !important; }
+@mixin align-content-around  { align-content: space-around !important; }
+@mixin align-content-stretch { align-content: stretch !important; }
+
+@mixin align-self-auto     { align-self: auto !important; }
+@mixin align-self-start    { align-self: flex-start !important; }
+@mixin align-self-end      { align-self: flex-end !important; }
+@mixin align-self-center   { align-self: center !important; }
+@mixin align-self-baseline { align-self: baseline !important; }
+@mixin align-self-stretch  { align-self: stretch !important; }

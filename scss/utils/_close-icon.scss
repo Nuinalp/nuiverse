@@ -1,0 +1,13 @@
+.close-button{
+  &::before{
+    content: 'X';
+    font-size: inherit;
+    color: inherit;
+    font-size: inherit;
+    position: relative;
+    background: transparent;
+    height: auto;
+    width: auto;
+    color: unset;
+  }
+}

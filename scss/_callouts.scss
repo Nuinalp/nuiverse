@@ -1,0 +1,29 @@
+.nv-callout{
+  border-radius: $border-radius;
+  padding: $padding-y $padding-x;
+  border: 1px solid lighten($Dark, 75%);
+  border-left-width: 6px;
+  margin: $margin-sm-x 0;
+  background-color: $White;
+  @extend %shadown-default;
+  
+  p{
+    margin: 0;
+  }
+}
+
+.nv-callout-simple{
+  background-color: lighten($Dark, 80%);
+  border-left: 1px solid lighten($Dark, 75%);
+  box-shadow: unset;
+}
+
+//
+//Theme badges
+//
+
+@each $themeName, $color in $theme-colors{
+  .nv-callout-#{$themeName}{
+    border-color: $color;
+  }
+}

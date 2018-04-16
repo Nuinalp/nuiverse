@@ -23,7 +23,7 @@
   cursor: default;
   margin: 0 4px 4px 0;
   
-  @include button-size($padding-y, $padding-x, $font-size-base, $btn-line-height, $border-radius);
+  @include button-size($padding-y, $padding-x, $font-size-base, $border-radius);
   @include transition(200, #{"default"});
   @extend %default; //Include the default size font.
   @extend %shadown-default;
