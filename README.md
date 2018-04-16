@@ -1,8 +1,8 @@
 <p align="center"><img src="https://raw.githubusercontent.com/Nuinalp/nuiverse/master/nuiverse-logo.png" alt="NUIverse logo" width="300"/></p>
 <p align="center">
   <a href="https://github.com/Nuinalp/nuiverse/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-BSD-blue.svg" alt="License"/></a>
-  <img src="https://img.shields.io/badge/Version-0.0.1-green.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/Build-Alpha-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-0.0.8-green.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/Build-Beta-blue.svg" alt="Version"/>
 </p>
 
 ## About

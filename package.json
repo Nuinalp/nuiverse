@@ -1,6 +1,6 @@
 {
   "name": "NUIverse",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "The best framework fron-end for developing best UI for web and Plánium OS",
   "url": "https://www.nuinalp.com/products/nuiverse",
   "license": "BSD-3-Clause",
@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nuinalp/nuiverse/nfw.git"
+    "url": "https://github.com/Nuinalp/nuiverse.git"
   },
 }
