@@ -1,0 +1,71 @@
+.progress{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: $font-size-base;
+  overflow: hidden;
+  font-size: $font-size-base;
+  background-color: darken($White, 10%);
+  border-radius: $border-radius;
+  margin-top: $margin-y;
+  position: relative;
+
+  &.style-plos{
+    background-size: ($font-size-base * 15) ($font-size-base * 15);
+    background-repeat: repeat-x, repeat-y;
+    animation: progressbarAnim 1.5s steps(15) infinite;
+    background-image: repeating-linear-gradient( 135deg, darken($White, 10%), darken($White, 10%) ($font-size-base * 5), darken($White, 12%) ($font-size-base * 5), darken($White, 12%) ($font-size-base * 10) ) !important;
+  }
+}
+
+.progress-bar{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: $White;
+  text-align: center;
+  background-color: $Primary;
+  border-radius: $border-radius;
+  height: 100%;
+  @include bkg-degrade(lighten($Primary, 20%), 'default', 'false', 'to right');
+//  transition: width .6s ease;
+  
+    &:not(:first-child):not(:last-child){
+    @extend .obj-br-n;
+  }
+  
+  &:first-child:not(:last-child){
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &:last-child:not(:first-child){
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  &.loading{
+    width: 50%;
+    animation: loadingProgressbar 2s infinite;
+    position: absolute !important;
+    transition: all ease 500ms;
+    transform: translateX(-89%);
+  }
+}
+@each $themeName, $value in $theme-colors {
+  .progressbar-#{$themeName}{
+    @include bkg-degrade(lighten($value, 20%), 'default', 'false', 'to right');
+  }  
+  .progressbar-#{$themeName}-plos{
+      background-size: ($font-size-base * 15) ($font-size-base * 15);
+      background-repeat: repeat-x, repeat-y;
+      background-image: repeating-linear-gradient( 135deg, lighten($value, 10%), lighten($value, 10%) ($font-size-base * 5), $value ($font-size-base * 5), $value ($font-size-base * 10) );
+    animation: progressbarAnim 1.5s steps(15) infinite;
+  }
+}

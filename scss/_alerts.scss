@@ -1,0 +1,57 @@
+.alert{
+  position: relative;
+  padding: $padding-y $padding-lg-y;
+  margin-bottom: $margin-x;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  @extend %shadown-default;
+//  box-shadow: 
+  
+  hr{
+    margin: $margin-lg-y 0;
+    height: 1px;
+    background-color: $Dark;
+  }
+  
+  a{
+    color: $Dark;
+    font-weight: bold;
+  }
+  
+  $alertColors: map-remove($theme-colors, ('link'));
+
+  @each $themeName, $color in $alertColors{
+
+    &.#{$themeName}{
+
+        @if $themeName == 'dark'{
+          color: $White !important;
+          border: 1px solid darken($White, 5%);
+          
+          a{
+            color: $White;
+          }
+        }@else{
+          border: 1px solid rgba(darken($color, 5%), 0.8);
+        }    
+
+        @include bkg-degrade(lighten($color, 20%), 'default');
+
+         hr{
+            opacity: 0.5;
+            background-color: darken($color, 5%);
+          }
+      }
+  }
+  
+}
+
+.alert-link{
+  font-weight: 700;
+  color: unset;
+  vertical-align: initial;
+  
+  &:hover{
+    color: unset;
+  }
+}

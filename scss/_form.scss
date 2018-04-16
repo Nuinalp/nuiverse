@@ -1,0 +1,150 @@
+form{
+//  padding: 
+  background: $White;
+  @extend %shadown-default;
+  border-radius: $border-radius;
+  padding: ($padding-y * 4) ($padding-x * 2);
+  
+  .copyright{
+    margin-bottom: -20px;
+    margin-top: 20px;
+    display: block;
+  }
+}
+
+.form-group{
+  margin-bottom: $margin-y;
+}
+
+.form-control{
+  display: block;
+  width: 100%;
+}
+
+.form-text{
+  display: block;
+  margin-top: $margin-sm-y;
+}
+
+.form-check{
+  margin: $margin-y 0;
+}
+
+.form-check-input{
+  display: inline-block;
+  position: relative;
+  margin: $margin-sm-y;
+  vertical-align: middle;
+}
+
+.form-check-label{
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.form-control-file, .form-control-range{
+  display: block;
+  width: 100%;
+}
+
+.form-control:disabled, .form-control[readonly]{
+  background: darken($White, 10%);
+}
+
+.form-check-input:disabled ~ .form-check-label{
+  color: darken($White, 40%);
+}
+
+.form-control-plaintext{
+  background: transparent;
+  border-color: transparent;
+  &:focus{
+    border-color: transparent;
+    box-shadow: none;
+    color:unset;
+  }
+}
+
+.form-check-inline{
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0;
+  margin-right: $margin-sm-x;
+}
+
+.form-inline{
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  
+  .form-group{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+//
+//Custom form
+//
+
+.custom-file-input{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+//  height: calc(2.25rem + 2px);
+  margin: 0;
+  opacity: 0;
+}
+
+.custom-file-label{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  padding: $padding-sm-y $padding-y;
+  line-height: 1.5;
+  background-color: $White;
+  border: 1px solid lighten($Dark, 60%);
+  padding: $padding-y $padding-x;
+  border-radius: $border-radius;
+}
+
+.form-account{
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.form-p-bkg{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+}
