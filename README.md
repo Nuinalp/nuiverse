@@ -23,7 +23,7 @@ With the NUIverse it will be possible to create web pages with a visual amazing,
 
 ### Current version
 
-This version is a alpha v0.0.8 beta. In this version does not have documentation and example codes. The official documentation is coming soon.
+This version is a v0.0.8 beta. In this version does not have documentation and example codes. The official documentation is coming soon.
 
 ## Changelog
 
