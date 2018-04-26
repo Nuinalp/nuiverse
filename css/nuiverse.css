@@ -16,9 +16,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background-color: transparent;
   border: 0;
   outline: 0;
-  font-size: 100%;
+  font-size: 16px;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+  color: #1e1e1e; }
 
 html {
   line-height: 1.15;
@@ -121,6 +122,9 @@ hr {
   border: 0;
   height: 1px;
   opacity: 0.5; }
+
+th {
+  text-align: inherit; }
 
 @keyframes click {
   0% {
@@ -4183,7 +4187,7 @@ hr {
     border-radius: 0 !important; }
   .button:hover {
     background: white !important;
-    color: #404040;
+    color: #1e1e1e;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.1) !important; }
   .button.disabled, .button:disabled {
     cursor: not-allowed; }
@@ -5035,7 +5039,7 @@ hr {
     .button.link:hover span {
       text-decoration: underline; }
     .button.link span {
-      color: #404040; }
+      color: #1e1e1e; }
   .button.dark-link {
     border: 1px solid white;
     background-color: #353535;
@@ -5079,7 +5083,7 @@ hr {
     .button.outline-link:hover span {
       text-decoration: underline; }
     .button.outline-link span {
-      color: #404040; }
+      color: #1e1e1e; }
   .button._3d-dark {
     background-image: linear-gradient(to bottom, #282828, #0f0f0f, #424242) ;
     background-image: -webkit-linear-gradient(to bottom, #282828, #0f0f0f, #424242) ;
@@ -5606,7 +5610,7 @@ hr {
 .badge-link {
   background-image: linear-gradient(to bottom, #e6e6e6, white) ;
   background-color: white ;
-  color: #404040; }
+  color: #1e1e1e; }
 
 .badge-3d-link {
   background-image: linear-gradient(to bottom, white, #e6e6e6, white) ;
@@ -5615,11 +5619,11 @@ hr {
   background-image: -ms-linear-gradient(to bottom, white, #e6e6e6, white) ;
   background-image: linear-gradient(to bottom, white, #e6e6e6, white) ;
   background-color: white ;
-  color: #404040; }
+  color: #1e1e1e; }
 
 .badge-flat-link {
   background-color: white ;
-  color: #404040; }
+  color: #1e1e1e; }
 
 .badge-dark {
   background-image: linear-gradient(to bottom, #0f0f0f, #424242) ;
@@ -5660,7 +5664,7 @@ hr {
 .badge-white {
   background-image: linear-gradient(to bottom, #e6e6e6, white) ;
   background-color: white ;
-  color: #404040; }
+  color: #1e1e1e; }
 
 .badge-3d-white {
   background-image: linear-gradient(to bottom, white, #e6e6e6, white) ;
@@ -5669,11 +5673,11 @@ hr {
   background-image: -ms-linear-gradient(to bottom, white, #e6e6e6, white) ;
   background-image: linear-gradient(to bottom, white, #e6e6e6, white) ;
   background-color: white ;
-  color: #404040; }
+  color: #1e1e1e; }
 
 .badge-flat-white {
   background-color: white ;
-  color: #404040; }
+  color: #1e1e1e; }
 
 .breadcrumb {
   display: -webkit-box;
@@ -5694,7 +5698,7 @@ hr {
       display: inline-block;
       padding: 0 8px; }
     .breadcrumb .breadcrumb-item.current {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb .breadcrumb-item.disabled {
       color: #7f7f7f;
@@ -5709,10 +5713,10 @@ hr {
     .breadcrumb.itens-color-default a {
       color: #7f7f7f; }
     .breadcrumb.itens-color-default .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-default .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-default-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-default-white .active {
@@ -5732,10 +5736,10 @@ hr {
     .breadcrumb.itens-color-primary a {
       color: #0070c0; }
     .breadcrumb.itens-color-primary .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-primary .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-primary-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-primary-white .active {
@@ -5755,10 +5759,10 @@ hr {
     .breadcrumb.itens-color-secondary a {
       color: #4a8ecb; }
     .breadcrumb.itens-color-secondary .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-secondary .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-secondary-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-secondary-white .active {
@@ -5778,10 +5782,10 @@ hr {
     .breadcrumb.itens-color-danger a {
       color: #e23e32; }
     .breadcrumb.itens-color-danger .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-danger .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-danger-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-danger-white .active {
@@ -5801,10 +5805,10 @@ hr {
     .breadcrumb.itens-color-info a {
       color: #7f7f7f; }
     .breadcrumb.itens-color-info .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-info .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-info-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-info-white .active {
@@ -5824,10 +5828,10 @@ hr {
     .breadcrumb.itens-color-warning a {
       color: #ff9800; }
     .breadcrumb.itens-color-warning .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-warning .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-warning-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-warning-white .active {
@@ -5847,10 +5851,10 @@ hr {
     .breadcrumb.itens-color-success a {
       color: #70ad47; }
     .breadcrumb.itens-color-success .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-success .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-success-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-success-white .active {
@@ -5870,10 +5874,10 @@ hr {
     .breadcrumb.itens-color-selected a {
       color: white; }
     .breadcrumb.itens-color-selected .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-selected .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-selected-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-selected-white .active {
@@ -5893,10 +5897,10 @@ hr {
     .breadcrumb.itens-color-link a {
       color: white; }
     .breadcrumb.itens-color-link .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-link .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-link-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-link-white .active {
@@ -5916,10 +5920,10 @@ hr {
     .breadcrumb.itens-color-dark a {
       color: #282828; }
     .breadcrumb.itens-color-dark .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-dark .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-dark-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-dark-white .active {
@@ -5939,10 +5943,10 @@ hr {
     .breadcrumb.itens-color-black a {
       color: black; }
     .breadcrumb.itens-color-black .active {
-      color: #404040;
+      color: #1e1e1e;
       text-decoration: none; }
     .breadcrumb.itens-color-black .breadcrumb-item + .breadcrumb-item::before {
-      color: #404040; }
+      color: #1e1e1e; }
   .breadcrumb.itens-color-black-white .breadcrumb-item + .breadcrumb-item::before {
     color: white; }
   .breadcrumb.itens-color-black-white .active {
@@ -6205,10 +6209,10 @@ mark, .mark {
   mark.mark-link, .mark.mark-link {
     background-image: linear-gradient(to bottom, #e6e6e6, white) ;
     background-color: white ;
-    color: #404040; }
+    color: #1e1e1e; }
   mark.mark-flat-link, .mark.mark-flat-link {
     background-color: white ;
-    color: #404040; }
+    color: #1e1e1e; }
   mark.mark-3d-link, .mark.mark-3d-link {
     background-image: linear-gradient(to bottom, white, #e6e6e6, white) ;
     background-image: -webkit-linear-gradient(to bottom, white, #e6e6e6, white) ;
@@ -6216,7 +6220,7 @@ mark, .mark {
     background-image: -ms-linear-gradient(to bottom, white, #e6e6e6, white) ;
     background-image: linear-gradient(to bottom, white, #e6e6e6, white) ;
     background-color: white ;
-    color: #404040; }
+    color: #1e1e1e; }
   mark.mark-dark, .mark.mark-dark {
     background-image: linear-gradient(to bottom, #0f0f0f, #424242) ;
     background-color: #282828 ;
@@ -7877,5 +7881,57 @@ input[type=checkbox]:checked ~ .nav-content {
     padding: 10px 14px; }
     .menu li a {
       vertical-align: unset; }
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 12px;
+  background-color: transparent; }
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #e6e6e6; }
+  .table td, .table th {
+    padding: 12px;
+    vertical-align: top;
+    border-top: 1px solid #e6e6e6; }
+  .table.striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(40, 40, 40, 0.05); }
+  .table.borded td, .table.borded th {
+    border: 1px solid #e6e6e6; }
+  .table.hover tbody tr:hover {
+    background-color: rgba(40, 40, 40, 0.05); }
+  .table.small td, .table th {
+    padding: 8px; }
+  .table.dark {
+    background-color: #282828;
+    color: white !important; }
+    .table.dark thead th {
+      border-bottom: 2px solid #424242;
+      color: white; }
+    .table.dark td, .table.dark th {
+      border-top: 1px solid #424242;
+      color: white; }
+    .table.dark.striped tbody tr:nth-of-type(odd) {
+      background-color: rgba(255, 255, 255, 0.05); }
+    .table.dark.hover tbody tr:hover {
+      background-color: rgba(255, 255, 255, 0.05); }
+    .table.dark.borded td, .table.dark.borded th {
+      border: 1px solid #424242; }
+  .table.light {
+    background-color: white; }
+  .table .thead-light {
+    background-color: #ebebeb; }
+  .table .thead-dark {
+    background-color: #282828; }
+    .table .thead-dark th {
+      color: white;
+      border-bottom: 2px solid #282828; }
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
 
 /*# sourceMappingURL=nuiverse.css.map */

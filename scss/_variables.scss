@@ -67,10 +67,6 @@ $spacers: map-merge((
   12: round($spacer * 6.25) //100px
 ), $spacers);
 
-
-//Colors
-$GrayText: rgb(64,64,64);
-
 //Themes
 $Default:   rgb(127, 127, 127) !default;
 $Primary:   rgb(0, 112, 192) !default;
