@@ -28,10 +28,10 @@
   .badge-#{$themeName}{
     @include bkg-degrade($color, 'default');
     @if $themeName == 'link'{
-        color: $GrayText;
+        color: $font-color-base;
     }
     @else if $themeName == 'white'{
-      color: $GrayText;
+      color: $font-color-base;
     }
     @else{
       color: #fff;
@@ -42,10 +42,10 @@
     @include bkg-degrade($color, '3d');
     
     @if $themeName == 'link'{
-        color: $GrayText;
+        color: $font-color-base;
     }
     @else if $themeName == 'white'{
-      color: $GrayText;
+      color: $font-color-base;
     }
     @else{
       color: #fff;
@@ -56,10 +56,10 @@
     @include bkg-degrade($color, 'flat');
     
     @if $themeName == 'link'{
-        color: $GrayText;
+        color: $font-color-base;
     }
     @else if $themeName == 'white'{
-      color: $GrayText;
+      color: $font-color-base;
     }
     @else{
       color: #fff;

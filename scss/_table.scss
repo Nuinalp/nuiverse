@@ -1,0 +1,92 @@
+.table{
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $margin-y;
+  background-color: transparent;
+  
+  thead th{
+    vertical-align: bottom;
+    border-bottom: 2px solid darken($White, 10%);
+  }
+  
+  td, th{
+    padding: $padding-x;
+    vertical-align: top;
+    border-top: 1px solid darken($White, 10%);
+  }
+  
+  &.striped tbody tr:nth-of-type(odd){
+    background-color: rgba($Dark, 0.05);
+  }
+  
+  // Border
+  &.borded td, &.borded th{
+    border: 1px solid darken($White, 10%);
+  }
+  
+  //Hover
+  &.hover tbody tr:hover{
+    background-color: rgba($Dark, 0.05);
+  }
+  
+  //Size
+  &.small td, th{
+    padding: $padding-sm-x;
+  }
+  
+  // Dark theme
+  &.dark{
+    background-color: $Dark; 
+    color: white !important;
+    
+    thead th{
+      border-bottom: 2px solid lighten($Dark, 10%);
+      color: white;
+    }
+    
+    td, th{
+     border-top: 1px solid lighten($Dark, 10%); 
+      color: white;
+    }
+    
+    &.striped tbody tr:nth-of-type(odd){
+      background-color: rgba($White, 0.05);
+    }
+    
+    //Hover
+    &.hover tbody tr:hover{
+      background-color: rgba($White, 0.05);
+    }
+    
+    &.borded td, &.borded th{
+      border: 1px solid lighten($Dark, 10%); 
+    }
+    
+  }  
+  
+  &.light{
+    background-color: $White; 
+  }
+  
+  .thead-light{
+    background-color: darken($White, 8%);
+  } 
+  
+  .thead-dark{
+    background-color: $Dark;
+    
+    th{
+      color: white;  
+      border-bottom: 2px solid $Dark;
+    }  
+  }
+  
+}
+
+.table-responsive{
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}

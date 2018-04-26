@@ -39,7 +39,7 @@
 
   &:hover{
     background: $Selected !important;
-    color: $GrayText;
+    color: $font-color-base;
     box-shadow: $shadowHover;
   }
 
@@ -143,7 +143,7 @@
           text-decoration: underline;
         }
         span {
-          color: $GrayText;
+          color: $font-color-base;
         }
       }
 
@@ -199,7 +199,7 @@
         text-decoration: underline;
       }
       span {
-        color: $GrayText;
+        color: $font-color-base;
       }
     }
     @else if $themeName == 'dark'{

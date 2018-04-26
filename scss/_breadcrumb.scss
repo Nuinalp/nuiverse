@@ -21,7 +21,7 @@
     }
     
     &.current{
-      color: $GrayText;
+      color: $font-color-base;
       text-decoration: none;
     }
     
@@ -69,12 +69,12 @@
         }
 
         .active{
-          color: $GrayText;
+          color: $font-color-base;
           text-decoration: none;
         }
 
         .breadcrumb-item + .breadcrumb-item::before{
-            color: $GrayText;
+            color: $font-color-base;
         }
       }
     }
