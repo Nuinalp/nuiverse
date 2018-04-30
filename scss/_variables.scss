@@ -1,10 +1,10 @@
 //
-//The variables
+// The variables
 //
 
 
 //
-//Paddings
+// Paddings
 //
 
 $padding-y: 10px;
@@ -28,7 +28,7 @@ $padding-big-x: 28px;
 $padding-mark: 4px;
 
 //
-//Margins
+// Margins
 //
 
 $margin-y: 12px;
@@ -67,7 +67,7 @@ $spacers: map-merge((
   12: round($spacer * 6.25) //100px
 ), $spacers);
 
-//Themes
+// Themes
 $Default:   rgb(127, 127, 127) !default;
 $Primary:   rgb(0, 112, 192) !default;
 $Secondary: rgb(74, 142, 203) !default;
@@ -80,41 +80,10 @@ $Link:      rgb(255,255,255) !default;
 $Dark:      rgb(40,40,40) !default;
 $Black:      rgb(0,0,0)  !default;
 $White:     rgb(255,255,255) !default;
-
-
-//$blue:    rgb(0, 112, 192) !default;
-//$indigo:  #6610f2 !default;
-//$purple:  #6f42c1 !default;
-//$pink:    #e83e8c !default;
-//$red:     #dc3545 !default;
-//$orange:  #fd7e14 !default;
-//$yellow:  #ffc107 !default;
-//$green:   #28a745 !default;
-//$teal:    #20c997 !default;
-//$cyan:    #17a2b8 !default;
-//$white:    rgb(255,255,255);
-//
-//$colors: () !default;
-//$colors: map-merge((
-//  "blue":       $blue,
-//  "indigo":     $indigo,
-//  "purple":     $purple,
-//  "pink":       $pink,
-//  "red":        $red,
-//  "orange":     $orange,
-//  "yellow":     $yellow,
-//  "green":      $green,
-//  "teal":       $teal,
-//  "cyan":       $cyan,
-//  "white":      $white,
-//  "gray":       $gray-600,
-//  "gray-dark":  $gray-800
-//), $colors);
-
 $text-muted:  rgb(127, 127, 127) !default;
 
 //
-//Links
+// Links
 //
 
 $link-color:  rgb(0, 112, 192) !default;
@@ -139,7 +108,7 @@ $theme-colors: map-merge((
   "white":        $White,
 ), $theme-colors);
 
-//Transitions
+// Transitions
 $btn-transition: "500ms";
 
 //
@@ -150,13 +119,13 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
 $font-family-monospace:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
-//Font
+// Font
 $font-size-base: 16px;
 $font-size-md: 16px;
 $font-size-lg: 18px;
 $font-size-sm: 12px;
 
-//Font Weight
+// Font Weight
 $font-weight-light:   200 !default;
 $font-weight-normal:  400 !default;
 $font-weight-bold:    700 !default;
@@ -165,7 +134,7 @@ $font-weight-base:    $font-weight-normal !default;
 $line-height-base:    1.15 !default;
 $line-heigth-body:    1.5;
 
-//Base color font
+// Base color font
 $font-color-base: rgb(30,30,30);
 
 //
@@ -209,7 +178,7 @@ $SizeMainTitle: map-merge((
 
 
 //
-//List
+// List
 //
 
 //Type list
@@ -243,7 +212,7 @@ $StyleList: map-merge((
 ), $StyleList);
 
 //
-//Global Size Width and height
+// Global Size Width and height
 //
 
 // This variable for global classes Width and height
@@ -316,9 +285,9 @@ $border-color:   $Default !default;
 $border-radius: 20px;
 $border-radius-m: 8px;
 
-//Shadows
-$shadowDefault: 0 2px 4px rgba(0, 0, 0, 0.26) !important;
-$shadowSmall: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
-$shadowMedium: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
-$shadowLarge: 0 8px 20px rgba(0, 0, 0, 0.4) !important;
-$shadowHover: 0 4px 5px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.1) !important;
+// Shadows
+$shadowDefault: 0 2px 4px rgba(0, 0, 0, 0.26);
+$shadowSmall: 0 2px 4px rgba(0, 0, 0, 0.2);
+$shadowMedium: 0 4px 8px rgba(0, 0, 0, 0.4);
+$shadowLarge: 0 8px 20px rgba(0, 0, 0, 0.4);
+$shadowHover: 0 4px 5px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.1);

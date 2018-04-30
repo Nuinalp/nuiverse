@@ -95,21 +95,71 @@
        @include bkg-degrade($value, '3d-disabled');
         color: $White;
       }
+      
+      span{
+        color: $White;
+      }
+      
+      @if $themeName == 'link'{
+        &:hover span{
+          text-decoration: underline;
+        }
+        span, &:hover span {
+          color: $font-color-base;
+        }
+      }
+
+      @else if $themeName == 'dark'{
+        &:hover span{
+          color: $Dark;
+        }
+        span {
+          color: $White;
+        }
+      }
+      
     }
 
     &.flat-#{$themeName} {
       @include bkg-degrade($value, 'flat');
       border:1px solid $value;
+      
       //Disable button
       &.disabled, &:disabled{
        @include bkg-degrade($value, 'flat-disabled');
         color: $White;
+      }
+      
+      span{
+        color: $White;
+      }
+      
+      @if $themeName == 'link'{
+        &:hover span{
+          text-decoration: underline;
+        }
+        span, &:hover span {
+          color: $font-color-base;
+        }
+      }
+
+      @else if $themeName == 'dark'{
+        &:hover span{
+          color: $Dark;
+        }
+        span {
+          color: $White;
+        }
       }
     }
   
     &.#{$themeName} {
       border:1px solid $value;
       @include bkg-degrade($value);
+      
+      span{
+        color: $White;
+      }
 
       //Disable button
       &.disabled, &:disabled{
@@ -131,7 +181,9 @@
 
       &:hover{
         
-        color: $value;
+        span{
+          color: $value;
+        }
         
         &:after{
           @include transition(200, #{"fx-btn-hover"});
@@ -142,7 +194,7 @@
         &:hover span{
           text-decoration: underline;
         }
-        span {
+        span, &:hover span {
           color: $font-color-base;
         }
       }
@@ -161,7 +213,9 @@
     
     border:1px solid $value;
     background-color: lighten($Dark, 5%);
-    color: $value;
+    span{
+      color: $value;
+    }
   }
 
   &.outline-#{$themeName}{
@@ -214,92 +268,7 @@
   }
 }
 
-.button-group{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  .button{
-    margin: 0 -1px 4px 0;
-  }
-  .button:not(:first-child):not(:last-child){
-    @extend .obj-br-n;
-  }
-  
-  .button:first-child:not(:last-child){
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .button:last-child:not(:first-child){
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-}
 
-.button-group-vertical{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  
-  .button{
-    margin: 0 0 -1px 0;
-    width: 100%;
-    display: block;    
-  }
-  .button:not(:first-child):not(:last-child){
-    @extend .obj-br-n;
-  }
-  
-  .button:first-child:not(:last-child){
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .button:last-child:not(:first-child){
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-}
-
-.button-group-circle{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  
-  &.vertical{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  }
-}
 
 .buttons-nosd .button{
   @extend %no-box-shadown;
@@ -311,4 +280,97 @@
 
 .buttons-sm .button{
   @extend %size-sm;
+}
+@each $bpName in map-keys($global-breakpoints) {
+ @include media-breakpoint-min($bpName) {
+    
+    $checkName: bpHelper($bpName, 'check', '-');
+   
+   .button-group#{$checkName}{
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      .button{
+        margin: 0 -1px 4px 0;
+      }
+      .button:not(:first-child):not(:last-child){
+        border-radius: 0;
+      }
+
+      .button:first-child:not(:last-child){
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .button:last-child:not(:first-child){
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }   
+
+    .button-group-vertical#{$checkName}{
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+
+      .button{
+        margin: 0 0 -1px 0;
+        width: 100%;
+        display: block;    
+      }
+      .button:not(:first-child):not(:last-child){
+        border-radius: 0;
+      }
+
+      .button:first-child:not(:last-child){
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .button:last-child:not(:first-child){
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }  
+
+    .button-group-circle#{$checkName}{
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+
+      &.vertical{
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      }
+   }
+  }//End each Global breackpoints
 }
