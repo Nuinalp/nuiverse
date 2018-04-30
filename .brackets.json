@@ -5,7 +5,7 @@
         "scss/nuiverse.scss": {
             "sass.enabled": true,
             "sass.options": {
-                "outputDir": "../css/",
+                "outputDir": "../dist/css/",
                 "output": "nuiverse.css",
                 "imagePath": null,
                 "sourceComments": false,
@@ -16,7 +16,7 @@
       "scss/docs-nv.scss": {
             "sass.enabled": true,
             "sass.options": {
-                "outputDir": "../css/",
+                "outputDir": "../dist/css/",
                 "imagePath": null,
                 "sourceComments": false,
                 "outputStyle": "nested"
@@ -26,7 +26,7 @@
       "scss/nuiverse.min.scss": {
             "sass.enabled": true,
             "sass.options": {
-                "outputDir": "../css/",
+                "outputDir": "../dist/css/",
                 "imagePath": null,
                 "sourceComments": false,
                 "outputStyle": "compressed"

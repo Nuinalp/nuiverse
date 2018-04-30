@@ -1,0 +1,14 @@
+.menu {
+  
+  li{
+    border-radius: $border-radius;
+  }
+  
+  .active {
+    background: $Primary;
+    > a {
+    color: $White;
+  }
+  
+  }
+}
