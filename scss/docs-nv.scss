@@ -59,7 +59,7 @@ body{
   width:100%;
   @extend .shadow;
   
-  .row{
+  &.grid-ex .row{
     margin-bottom: 20px;
     
     & > [class^="columns"], & > [class^="column"] {

@@ -7161,12 +7161,13 @@ form {
   color: #999999; }
 
 .form-control-plaintext {
-  background: transparent;
-  border-color: transparent; }
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important; }
   .form-control-plaintext:focus {
     border-color: transparent;
-    box-shadow: none;
-    color: unset; }
+    box-shadow: none !important;
+    color: unset !important; }
 
 .form-check-inline {
   display: -webkit-inline-box;
@@ -7237,6 +7238,11 @@ form {
   width: 100%;
   height: 100%;
   background-size: cover; }
+
+.column-form-label {
+  padding: 10px 12px;
+  margin-bottom: 0;
+  font-size: inherit; }
 
 .input-group-text {
   display: -webkit-box;
