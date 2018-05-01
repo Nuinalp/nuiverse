@@ -10,8 +10,7 @@
 html, body {
   height: 100%;
   position: relative;
-  display: block;
-  height: auto; }
+  display: block; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
@@ -4147,7 +4146,7 @@ th {
 .shadow-none {
   box-shadow: none !important; }
 
-.shadow, .button {
+.shadow, .button, .input-group-prepend .input-group-text, .input-group-prepend .button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26); }
 
 .shadow-small {
@@ -7161,12 +7160,13 @@ form {
   color: #999999; }
 
 .form-control-plaintext {
-  background: transparent;
-  border-color: transparent; }
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important; }
   .form-control-plaintext:focus {
     border-color: transparent;
-    box-shadow: none;
-    color: unset; }
+    box-shadow: none !important;
+    color: unset !important; }
 
 .form-check-inline {
   display: -webkit-inline-box;
@@ -7237,6 +7237,11 @@ form {
   width: 100%;
   height: 100%;
   background-size: cover; }
+
+.column-form-label {
+  padding: 10px 12px;
+  margin-bottom: 0;
+  font-size: inherit; }
 
 .input-group-text {
   display: -webkit-box;
