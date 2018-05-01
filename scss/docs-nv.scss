@@ -11,7 +11,7 @@ body{
     background-image: url('../img/example-nfw-bkg.svg');
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: contain;
+    background-size: cover;
     top: 0;
     left: 0;
     z-index: -1;
@@ -34,6 +34,10 @@ body{
   background-repeat: no-repeat;
   background-position: right;
   @extend .shadow;
+}
+
+#search-input{
+  display: none;
 }
 
 .code-show{
