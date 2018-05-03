@@ -23,8 +23,7 @@ With the NUIverse it will be possible to create web pages with a visual amazing,
 
 ### Current version
 
-This version is a v0.0.8. See the documentation on https://www.nuinalp.com/pt-br/products/nuiverse/docs/0.0.8/getting-started/welcome.
-
+This version is a v0.1.0.
 ## Changelog
 
 Detailed changes for each release are documented in the [release notes](https://github.com/nuinalp/nuiverse/releases).
