@@ -17,3 +17,19 @@
 .shadow-large{
   box-shadow: $shadowLarge;
 }
+
+.shadow-center{
+  box-shadow: $shadowCenterDefault;
+}
+
+.shadow-center-small{
+  box-shadow: $shadowCenterSmall;
+}
+
+.shadow-center-medium{
+  box-shadow: $shadowCenterMedium;
+}
+
+.shadow-center-large{
+  box-shadow: $shadowCenterLarge;
+}

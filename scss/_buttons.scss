@@ -11,24 +11,199 @@
   vertical-align: middle;
   
   //Remove user select
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  overflow: hidden;
+//  -webkit-user-select: none;
+//  -moz-user-select: none;
+//  -ms-user-select: none;
+//  user-select: none;
+//  overflow: hidden;
   background-color: $Primary;
   border: 1px solid $Primary;
-  color: white;
+  color: $White;
   cursor: default;
   margin: 0 4px 4px 0;
   font-weight: 400;
-    
+  @include transition(200, #{"default"});
   @include button-size($padding-y, $padding-x, $font-size-base, $border-radius);
+  
+    //Disable button
+  &.disabled, &:disabled{
+   cursor: not-allowed;
+  }
+
+  &:active{
+    transform: scale(0.8);
+    box-shadow: none !important;
+  }  
+
+  &:not(:active){
+    transform: scale(1);
+  } 
   
   &:hover{
     color: $Primary;
   }
+  
+  //
+  // Style colors buttons
+  //
+
+  @each $themeName, $value in $theme-colors {
+    &.#{$themeName} {
+      
+      &.modern-fx{
+        span{
+
+          &::after{
+            box-shadow: 0 0 0px 20px rgba($value, .1);
+          }
+
+          &::before{
+            box-shadow: 0 0 0px 30px rgba($value, .04);
+          }
+        }
+      }
+      
+      border:1px solid $value;
+      @include bkg-degrade($value);
+      
+      span{
+        color: $White;
+      }
+
+      //Disable button
+      &.disabled, &:disabled{
+       @include bkg-degrade($value, 'disabled');
+        color: $White;
+      }
+    
+      &:hover{
+        background-color: $White;
+        background-image: unset;
+        span{
+          color: $value;
+        }
+      }
+
+      @if $themeName == 'link'{
+        &:hover span{
+          text-decoration: underline;
+        }
+        span, &:hover span {
+          color: $font-color-base;
+        }
+      }
+
+      @else if $themeName == 'dark'{
+        &:hover span{
+          color: $Dark;
+        }
+        span {
+          color: $White;
+        }
+      }
+    }
+  }
+
+&.modern-fx{
+
+  &:not(:active):hover{
+    span::after{
+        width: 80%;
+        height: 80%;
+        animation: fxhover-after 2s infinite .5s;
+        }     
+
+    span::before{
+        width: 80%;
+        height: 80%;
+        animation: fxhover-before 2s infinite .8s;
+      } 
+    }  
+  
+//  &:not(:hover){
+//    span::after{
+//       animation-play-state: paused, running;
+//        width: 0%;
+//        height: 0%;
+//      opacity: 0;
+//        }     
+//
+//    span::before{
+//      animation-play-state: paused, running;
+//      width: 0%;
+//      height: 0%;
+//      opacity: 0;
+//      } 
+//    }
+  
+    &:hover{
+      &::after{
+        opacity: 1;
+      }
+    }
+  
+    &::after{
+      content: ' ';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      border-radius: 100%;
+      background-color: white;
+      opacity: 0;
+    }
+    span{
+      z-index:2;
+
+      &::after{
+        content: ' ';
+        width: 0%;
+        height: 0%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 100%;
+        box-shadow: 0 0 0px 20px rgba($Primary, .1);
+        transition: width, height;
+        transition-duration: .5s, .5s;
+        transition: width, height;
+        transition-duration: .5s, .5s;
+        z-index: -1;
+        
+      }
+
+      &::before{
+        content: ' ';
+        width: 0%;
+        height: 0%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 100%;
+        box-shadow: 0 0 0px 30px rgba($Primary, .04);
+        transition: width, height;
+        transition-duration: .5s, .5s;
+        transition: width, height;
+        transition-duration: .5s, .5s;
+        z-index: -1;
+        
+      }
+  }
 }
+
+  &.circle{
+    border-radius: 100%;
+    height: 90px;
+    width: 90px;
+    padding: $padding-y 0;
+    
+  }
+}
+
 
 ////Style base
 //.button{
