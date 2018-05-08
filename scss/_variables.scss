@@ -122,7 +122,7 @@ $font-family-base:       $font-family-sans-serif !default;
 // Font
 $font-size-base: 16px;
 $font-size-md: 16px;
-$font-size-lg: 18px;
+$font-size-lg: 20px;
 $font-size-sm: 12px;
 
 // Font Weight
@@ -282,8 +282,9 @@ $border-width:   1px !default;
 $border-color:   $Default !default;
 
 // Border radius
-$border-radius: 20px;
-$border-radius-m: 8px;
+$border-radius: 8px;
+$border-radius-large: 20px;
+$border-radius-circle: 100%;
 
 // Shadows
 $shadowDefault: 0 12px 16px -6px rgba(0, 0, 0, .2), 0 12px 30px -13px rgba(0, 0, 0, .4);

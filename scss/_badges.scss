@@ -36,34 +36,5 @@
     @else{
       color: #fff;
     }
-  }
-  
-  .badge-3d-#{$themeName} {
-    @include bkg-degrade($color, '3d');
-    
-    @if $themeName == 'link'{
-        color: $font-color-base;
-    }
-    @else if $themeName == 'white'{
-      color: $font-color-base;
-    }
-    @else{
-      color: #fff;
-    }
-  }
-  
-  .badge-flat-#{$themeName} {
-    @include bkg-degrade($color, 'flat');
-    
-    @if $themeName == 'link'{
-        color: $font-color-base;
-    }
-    @else if $themeName == 'white'{
-      color: $font-color-base;
-    }
-    @else{
-      color: #fff;
-    }
-  }
-  
+  }  
 }

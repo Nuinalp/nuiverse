@@ -1,21 +1,15 @@
 //Buttons
 
 .button{
-  //Default base
+  
+  // Default style
   display: inline-block;
   position: relative;
 
   //Align base
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
   
-  //Remove user select
-//  -webkit-user-select: none;
-//  -moz-user-select: none;
-//  -ms-user-select: none;
-//  user-select: none;
-//  overflow: hidden;
   background-color: $Primary;
   border: 1px solid $Primary;
   color: $White;
@@ -28,6 +22,16 @@
     //Disable button
   &.disabled, &:disabled{
    cursor: not-allowed;
+   color: $White !important;
+   @include bkg-degrade($Primary, 'disabled');
+    span{
+      color: $White !important;
+      ::after, ::before {
+        display: none;
+      }
+      :hover{
+      }
+    }
   }
 
   &:active{
@@ -41,7 +45,35 @@
   
   &:hover{
     color: $Primary;
+    span{
+      color: $Primary;
+    }
   }
+
+  span{
+    color: $White;
+  }
+
+  // Outline default
+
+  &.outline{
+    background-color: transparent;
+    border: 1px solid $Primary;
+    color: $Primary; 
+    
+    span{
+      color: $Primary; 
+    }
+    
+    &:hover{
+      background-color: $Primary;
+      color: $White;
+      span{
+        color: $White; 
+      }
+    }
+  }
+
   
   //
   // Style colors buttons
@@ -58,12 +90,12 @@
           }
 
           &::before{
-            box-shadow: 0 0 0px 30px rgba($value, .04);
+            box-shadow: 0 0 0px 30px rgba($value, .06);
           }
         }
       }
       
-      border:1px solid $value;
+      border: 1px solid $value;
       @include bkg-degrade($value);
       
       span{
@@ -102,6 +134,60 @@
         }
       }
     }
+    
+    &.outline-#{$themeName} {
+    
+    @if $themeName != 'link' {
+      border: 1px solid $value;   
+      background-color: transparent;
+      background-image: unset;
+      
+      span{
+        color: $value;
+      }
+
+      //Disable button
+      &.disabled, &:disabled{
+       @include bkg-degrade($value, 'disabled');
+        color: $White;
+      }
+    
+      &:hover{
+        background-color: $value;
+        span{
+          color: $White;
+        }
+      }
+     }
+    } // End outline
+    
+    &.dark-#{$themeName} {
+    
+    @if $themeName != 'link' {
+      border: 1px solid $value;   
+      background-color: $Dark;
+      @include bkg-degrade($Dark);
+      
+      span{
+        color: $value;
+      }
+
+      //Disable button
+      &.disabled, &:disabled{
+       @include bkg-degrade($Dark);
+        color: $White;
+      }
+    
+      &:hover{
+        background-color: $value;
+        background-image: unset;
+        span{
+          color: $White;
+        }
+      }
+     }
+    } // End outline
+    
   }
 
 &.modern-fx{
@@ -110,31 +196,19 @@
     span::after{
         width: 80%;
         height: 80%;
+        transform: translate(-50%, -50%) scale(1);
         animation: fxhover-after 2s infinite .5s;
+        opacity: 1;
         }     
 
     span::before{
         width: 80%;
         height: 80%;
+        transform: translate(-50%, -50%) scale(1);
         animation: fxhover-before 2s infinite .8s;
+        opacity: 1;
       } 
     }  
-  
-//  &:not(:hover){
-//    span::after{
-//       animation-play-state: paused, running;
-//        width: 0%;
-//        height: 0%;
-//      opacity: 0;
-//        }     
-//
-//    span::before{
-//      animation-play-state: paused, running;
-//      width: 0%;
-//      height: 0%;
-//      opacity: 0;
-//      } 
-//    }
   
     &:hover{
       &::after{
@@ -150,8 +224,8 @@
       z-index: -1;
       top: 0;
       left: 0;
-      border-radius: 100%;
-      background-color: white;
+      border-radius: $border-radius;;
+      background-color: $White;
       opacity: 0;
     }
     span{
@@ -161,17 +235,16 @@
         content: ' ';
         width: 0%;
         height: 0%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(1);
         position: absolute;
         top: 50%;
         left: 50%;
-        border-radius: 100%;
+        border-radius: $border-radius;
         box-shadow: 0 0 0px 20px rgba($Primary, .1);
         transition: width, height;
         transition-duration: .5s, .5s;
-        transition: width, height;
-        transition-duration: .5s, .5s;
         z-index: -1;
+        opacity: 0;
         
       }
 
@@ -179,403 +252,160 @@
         content: ' ';
         width: 0%;
         height: 0%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(1);
         position: absolute;
         top: 50%;
         left: 50%;
-        border-radius: 100%;
+        border-radius: $border-radius;
         box-shadow: 0 0 0px 30px rgba($Primary, .04);
         transition: width, height;
         transition-duration: .5s, .5s;
-        transition: width, height;
-        transition-duration: .5s, .5s;
         z-index: -1;
+        opacity: 0;
         
       }
   }
 }
 
+  // Circular buttons
   &.circle{
     border-radius: 100%;
     height: 90px;
     width: 90px;
     padding: $padding-y 0;
     
+    &.modern-fx {
+      
+      &::after{
+        border-radius: $border-radius-circle;
+      }
+      
+      span{
+        &::after {
+          border-radius: $border-radius-circle;
+        }
+        
+        &::before {
+          border-radius: $border-radius-circle;
+        }
+      }
+    } // End modern-fx
+    
+  } // End Circle
+
+  // Size Buttons
+
+  &.small{
+    font-size: $font-size-sm;
+    padding: $padding-sm-y $padding-sm-x;
+    
+    span{
+      font-size: $font-size-sm;
+    }
   }
+
+  &.large{
+    font-size: $font-size-lg;
+    padding: $padding-lg-y $padding-lg-x;
+    span{
+        font-size: $font-size-lg;
+    }
+  }
+
 }
 
+// Button groups
 
-////Style base
-//.button{
-//  //Default base
-//  display: inline-block;
-//  position: relative;
-//
-//  //Align base
-//  text-align: center;
-//  white-space: nowrap;
-//  vertical-align: middle;
-//  
-//  //Remove user select
-//  -webkit-user-select: none;
-//  -moz-user-select: none;
-//  -ms-user-select: none;
-//  user-select: none;
-//  overflow: hidden;
-//  background-color: $Default;
-//  border: 1px solid $Default;
-//  color: white;
-//  cursor: default;
-//  margin: 0 4px 4px 0;
-//  font-weight: 400;
-//    
-//  @include button-size($padding-y, $padding-x, $font-size-base, $border-radius);
-//  @include transition(200, #{"default"});
-//  @extend %default; //Include the default size font.
-//  @extend .shadow;
-//  
-//  &::before{
-//    @extend %fx-content;
-//  }
-//
-//  &.obj-br-n::after{
-//    border-radius: 0 !important;
-//  }
-//
-//  &:hover{
-//    background: $Selected !important;
-//    color: $font-color-base;
-//    box-shadow: $shadowHover;
-//  }
-//
-//  //Disable button
-//  &.disabled, &:disabled{
-//   cursor: not-allowed;
-//  }
-//
-//  span{
-//    z-index: 2;
-//    position: relative;
-//    cursor: unset;
-//  }
-//  
-//  &:active{
-//    transform: scale(0.8);
-//    box-shadow: none !important;
-//  }  
-//
-//  &:not(:active){
-//    transform: scale(1);
-//  } 
-//
-//  &.circle{
-//    border-radius: 100%;
-//    height: 90px;
-//    width: 90px;
-//    padding: $padding-y 0;
-//  }
-//
-//  &.outline{
-//  background-color: $White;
-//  border: 1px solid $Default;
-//  color: $Default;  
-//  }
-//
-//  &.block{
-//    display: block;
-//    width: 100%;
-//  }
-//  
-//  //
-//  // Style colors buttons
-//  //
-//
-//  @each $themeName, $value in $theme-colors {
-//  
-//    &._3d-#{$themeName} {
-//      @include bkg-degrade($value, '3d');
-//      border:1px solid $value;
-//      //Disable button
-//      &.disabled, &:disabled{
-//       @include bkg-degrade($value, '3d-disabled');
-//        color: $White;
-//      }
-//      
-//      span{
-//        color: $White;
-//      }
-//      
-//      @if $themeName == 'link'{
-//        &:hover span{
-//          text-decoration: underline;
-//        }
-//        span, &:hover span {
-//          color: $font-color-base;
-//        }
-//      }
-//
-//      @else if $themeName == 'dark'{
-//        &:hover span{
-//          color: $Dark;
-//        }
-//        span {
-//          color: $White;
-//        }
-//      }
-//      
-//    }
-//
-//    &.flat-#{$themeName} {
-//      @include bkg-degrade($value, 'flat');
-//      border:1px solid $value;
-//      
-//      //Disable button
-//      &.disabled, &:disabled{
-//       @include bkg-degrade($value, 'flat-disabled');
-//        color: $White;
-//      }
-//      
-//      span{
-//        color: $White;
-//      }
-//      
-//      @if $themeName == 'link'{
-//        &:hover span{
-//          text-decoration: underline;
-//        }
-//        span, &:hover span {
-//          color: $font-color-base;
-//        }
-//      }
-//
-//      @else if $themeName == 'dark'{
-//        &:hover span{
-//          color: $Dark;
-//        }
-//        span {
-//          color: $White;
-//        }
-//      }
-//    }
-//  
-//    &.#{$themeName} {
-//      border:1px solid $value;
-//      @include bkg-degrade($value);
-//      
-//      span{
-//        color: $White;
-//      }
-//
-//      //Disable button
-//      &.disabled, &:disabled{
-//       @include bkg-degrade($value, 'disabled');
-//        color: $White;
-//      }
-//
-//      &:after{
-//        @include fx-btn-click($value, #{'circle'});
-//      }
-//
-//      &:not(:active):hover::after{
-//        @include transition(200, #{"fx-btn-hover"});
-//      }
-//
-//      &:active:hover::after{
-//        @include transition(200, #{"click-btn"});
-//      }   
-//
-//      &:hover{
-//        
-//        span{
-//          color: $value;
-//        }
-//        
-//        &:after{
-//          @include transition(200, #{"fx-btn-hover"});
-//        }
-//      }
-//
-//      @if $themeName == 'link'{
-//        &:hover span{
-//          text-decoration: underline;
-//        }
-//        span, &:hover span {
-//          color: $font-color-base;
-//        }
-//      }
-//
-//      @else if $themeName == 'dark'{
-//        &:hover span{
-//          color: $Dark;
-//        }
-//        span {
-//          color: $White;
-//        }
-//      }
-//    }
-//
-//  &.dark-#{$themeName}{
-//    
-//    border:1px solid $value;
-//    background-color: lighten($Dark, 5%);
-//    span{
-//      color: $value;
-//    }
-//  }
-//
-//  &.outline-#{$themeName}{
-//    
-//    border:1px solid $value;
-//    @include bkg-degrade(#fff);
-//    color: $value;
-//    
-//    &::before{
-//     background-color: rgba(0, 0, 0, 0.02); 
-//    }
-//    
-//    &:after{
-//      @include fx-btn-click($value, #{'circle'});
-//    }
-//    
-//    &:not(:active):hover::after{
-//      @include transition(200, #{"fx-btn-hover"});
-//    }
-//  
-//    &:active:hover::after{
-//      @include transition(200, #{"click-btn"});
-//    }   
-//
-//    &:hover:after{
-//      @include transition(200, #{"fx-btn-hover"});
-//    }
-//
-//      span{
-//        color:$value;
-//      }
-//    
-//    @if $themeName == 'link'{
-//      &:hover span{
-//        text-decoration: underline;
-//      }
-//      span {
-//        color: $font-color-base;
-//      }
-//    }
-//    @else if $themeName == 'dark'{
-//      &:hover span{
-//        color: $Dark;
-//      }
-//      span {
-//        color: $Dark;
-//        }
-//      }
-//    }
-//  }
-//}
-//
-//
-//
-//.buttons-nosd .button{
-//  @extend %no-box-shadown;
-//}
-//
-//.buttons-lg .button{
-//  @extend %size-lg;
-//}
-//
-//.buttons-sm .button{
-//  @extend %size-sm;
-//}
-//@each $bpName in map-keys($global-breakpoints) {
-// @include media-breakpoint-min($bpName) {
-//    
-//    $checkName: bpHelper($bpName, 'check', '-');
-//   
-//   .button-group#{$checkName}{
-//      display: -webkit-inline-box;
-//      display: -webkit-inline-flex;
-//      display: -ms-inline-flexbox;
-//      display: inline-flex;
-//      .button{
-//        margin: 0 -1px 4px 0;
-//      }
-//      .button:not(:first-child):not(:last-child){
-//        border-radius: 0;
-//      }
-//
-//      .button:first-child:not(:last-child){
-//        border-top-right-radius: 0;
-//        border-bottom-right-radius: 0;
-//      }
-//      .button:last-child:not(:first-child){
-//        border-top-left-radius: 0;
-//        border-bottom-left-radius: 0;
-//      }
-//    }   
-//
-//    .button-group-vertical#{$checkName}{
-//      display: -webkit-inline-box;
-//      display: -webkit-inline-flex;
-//      display: -ms-inline-flexbox;
-//      display: inline-flex;
-//      -webkit-box-orient: vertical;
-//      -webkit-box-direction: normal;
-//      -webkit-flex-direction: column;
-//      -ms-flex-direction: column;
-//      flex-direction: column;
-//      -webkit-box-align: start;
-//      -webkit-align-items: flex-start;
-//      -ms-flex-align: start;
-//      align-items: flex-start;
-//      -webkit-box-pack: center;
-//      -webkit-justify-content: center;
-//      -ms-flex-pack: center;
-//      justify-content: center;
-//
-//      .button{
-//        margin: 0 0 -1px 0;
-//        width: 100%;
-//        display: block;    
-//      }
-//      .button:not(:first-child):not(:last-child){
-//        border-radius: 0;
-//      }
-//
-//      .button:first-child:not(:last-child){
-//        border-bottom-right-radius: 0;
-//        border-bottom-left-radius: 0;
-//      }
-//      .button:last-child:not(:first-child){
-//        border-top-right-radius: 0;
-//        border-top-left-radius: 0;
-//      }
-//    }  
-//
-//    .button-group-circle#{$checkName}{
-//      display: -webkit-inline-box;
-//      display: -webkit-inline-flex;
-//      display: -ms-inline-flexbox;
-//      display: inline-flex;
-//
-//      &.vertical{
-//      display: -webkit-inline-box;
-//      display: -webkit-inline-flex;
-//      display: -ms-inline-flexbox;
-//      display: inline-flex;
-//      -webkit-box-orient: vertical;
-//      -webkit-box-direction: normal;
-//      -webkit-flex-direction: column;
-//      -ms-flex-direction: column;
-//      flex-direction: column;
-//      -webkit-box-align: start;
-//      -webkit-align-items: flex-start;
-//      -ms-flex-align: start;
-//      align-items: flex-start;
-//      -webkit-box-pack: center;
-//      -webkit-justify-content: center;
-//      -ms-flex-pack: center;
-//      justify-content: center;
-//      }
-//   }
-//  }//End each Global breackpoints
-//}
+@each $bpName in map-keys($global-breakpoints) {
+ @include media-breakpoint-min($bpName) {
+    
+    $checkName: bpHelper($bpName, 'check', '-');
+   
+   .button-group#{$checkName}{
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      .button{
+        margin: 0 -1px 4px 0;
+      }
+      .button:not(:first-child):not(:last-child){
+        border-radius: 0;
+      }
+
+      .button:first-child:not(:last-child){
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .button:last-child:not(:first-child){
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }   
+
+    .button-group-vertical#{$checkName}{
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+
+      .button{
+        margin: 0 0 -1px 0;
+        width: 100%;
+        display: block;    
+      }
+      .button:not(:first-child):not(:last-child){
+        border-radius: 0;
+      }
+
+      .button:first-child:not(:last-child){
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .button:last-child:not(:first-child){
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }  
+
+    .button-group-circle#{$checkName}{
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+
+      &.vertical{
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      }
+   }
+  }//End each Global breackpoints
+}

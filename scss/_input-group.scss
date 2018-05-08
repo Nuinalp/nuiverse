@@ -90,13 +90,13 @@
   margin-bottom: 0;
 }
 
-.input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .form-control{
-  @extend %size-sm;
-}
-
-.input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .form-control{
-  @extend %size-lg;
-}
+//.input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .form-control{
+//  @extend %size-sm;
+//}
+//
+//.input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .form-control{
+//  @extend %size-lg;
+//}
 
 .input-group > .custom-file + .custom-file, .input-group > .custom-file + .custom-select, .input-group > .custom-file + .form-control, .input-group > .custom-select + .custom-file, .input-group > .custom-select + .custom-select, .input-group > .custom-select + .form-control, .input-group > .form-control + .custom-file, .input-group > .form-control + .custom-select, .input-group > .form-control + .form-control{
   margin-left: -1px;

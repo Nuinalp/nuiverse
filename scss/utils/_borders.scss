@@ -84,6 +84,7 @@
       border-color: lighten($color, 70%) !important;
     }
   }
+}
 
   @for $i from 1 through 12{
     .bt-#{$i}{
@@ -99,7 +100,6 @@
       border-right: #{$i}px solid;
     }
   }
-}
 
 .border-transparent {
   border-color: transparent !important;

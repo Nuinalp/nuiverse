@@ -80,30 +80,6 @@ mark, .mark {
       }
     }    
     
-    &.mark-flat-#{$themeName}{
-    
-      @include bkg-degrade($value, 'flat');
-      
-      @if $themeName == 'link'{
-        color: $font-color-base;
-      }
-      @else if $themeName == 'dark'{
-          color: white;
-      }
-    }    
-    
-    &.mark-3d-#{$themeName}{
-    
-      @include bkg-degrade($value, '3d');
-      
-      @if $themeName == 'link'{
-        color: $font-color-base;
-      }
-      @else if $themeName == 'dark'{
-          color: white;
-      }
-    }
-    
   }//End @each
 }
 
