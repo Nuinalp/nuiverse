@@ -1,35 +1,35 @@
-.shadow-none{
-  box-shadow: none !important;
-}
+// Shadows for create a depht effect
 
-.shadow{
-  box-shadow: $shadowDefault;
-}
+// Default
+.depth-0 {box-shadow: none;}
+.depth-1 {box-shadow: 0 1px 1px rgba(0,0,0,0.3);}
+.depth-2 {box-shadow: 0 2px 2px rgba(0,0,0,0.3);}
+.depth-4 {box-shadow: 0 2px 4px rgba(0,0,0,0.3);}
+.depth-6 {box-shadow: 0 2px 6px rgba(0,0,0,0.3);}
+.depth-8 {box-shadow: 0 2px 4px rgba(0,0,0,0.3);}
+.depth-10 {box-shadow: 0 4px 10px rgba(0,0,0,0.3);}
+.depth-12 {box-shadow: 0 4px 12px rgba(0,0,0,0.3);}
+.depth-16 {box-shadow: 0 4px 16px rgba(0,0,0,0.3);}
+.depth-26 {box-shadow: 0 10px 26px rgba(0,0,0,0.3);}
+.depth-32 {box-shadow: 0 10px 32px rgba(0,0,0,0.3);}
+.depth-48 {box-shadow: 0 10px 48px rgba(0,0,0,0.3);}
+.depth-64 {box-shadow: 0 20px 64px rgba(0,0,0,0.3);}
+.depth-76 {box-shadow: 0 20px 76px rgba(0,0,0,0.3);}
+.depth-88 {box-shadow: 0 20px 88px rgba(0,0,0,0.3);}
 
-.shadow-small{
-  box-shadow: $shadowSmall;
-}
-
-.shadow-medium{
-  box-shadow: $shadowMedium;
-}
-
-.shadow-large{
-  box-shadow: $shadowLarge;
-}
-
-.shadow-center{
-  box-shadow: $shadowCenterDefault;
-}
-
-.shadow-center-small{
-  box-shadow: $shadowCenterSmall;
-}
-
-.shadow-center-medium{
-  box-shadow: $shadowCenterMedium;
-}
-
-.shadow-center-large{
-  box-shadow: $shadowCenterLarge;
-}
+// Center
+.depth-center-0 {box-shadow: none;}
+.depth-center-1 {box-shadow: 0 0 1px rgba(0,0,0,0.3);}
+.depth-center-2 {box-shadow: 0 0 2px rgba(0,0,0,0.3);}
+.depth-center-4 {box-shadow: 0 0 4px rgba(0,0,0,0.3);}
+.depth-center-6 {box-shadow: 0 0 6px rgba(0,0,0,0.3);}
+.depth-center-8 {box-shadow: 0 0 4px rgba(0,0,0,0.3);}
+.depth-center-10 {box-shadow: 0 0 10px rgba(0,0,0,0.3);}
+.depth-center-12 {box-shadow: 0 0 12px rgba(0,0,0,0.3);}
+.depth-center-16 {box-shadow: 0 0 16px rgba(0,0,0,0.3);}
+.depth-center-26 {box-shadow: 0 0 26px rgba(0,0,0,0.3);}
+.depth-center-32 {box-shadow: 0 0 32px rgba(0,0,0,0.3);}
+.depth-center-48 {box-shadow: 0 0 48px rgba(0,0,0,0.3);}
+.depth-center-64 {box-shadow: 0 0 64px rgba(0,0,0,0.3);}
+.depth-center-76 {box-shadow: 0 0 76px rgba(0,0,0,0.3);}
+.depth-center-88 {box-shadow: 0 0 88px rgba(0,0,0,0.3);}
