@@ -17,19 +17,73 @@
 .depth-76 {box-shadow: 0 20px 76px rgba(0,0,0,0.3);}
 .depth-88 {box-shadow: 0 20px 88px rgba(0,0,0,0.3);}
 
+// Top
+.depth-0-top {box-shadow: none;}
+.depth-1-top {box-shadow: 0 -1px 1px rgba(0,0,0,0.3);}
+.depth-2-top {box-shadow: 0 -2px 2px rgba(0,0,0,0.3);}
+.depth-4-top {box-shadow: 0 -2px 4px rgba(0,0,0,0.3);}
+.depth-6-top {box-shadow: 0 -2px 6px rgba(0,0,0,0.3);}
+.depth-8-top {box-shadow: 0 -2px 4px rgba(0,0,0,0.3);}
+.depth-10-top {box-shadow: 0 -4px 10px rgba(0,0,0,0.3);}
+.depth-12-top {box-shadow: 0 -4px 12px rgba(0,0,0,0.3);}
+.depth-16-top {box-shadow: 0 -4px 16px rgba(0,0,0,0.3);}
+.depth-26-top {box-shadow: 0 -10px 26px rgba(0,0,0,0.3);}
+.depth-32-top {box-shadow: 0 -10px 32px rgba(0,0,0,0.3);}
+.depth-48-top {box-shadow: 0 -10px 48px rgba(0,0,0,0.3);}
+.depth-64-top {box-shadow: 0 -20px 64px rgba(0,0,0,0.3);}
+.depth-76-top {box-shadow: 0 -20px 76px rgba(0,0,0,0.3);}
+.depth-88-top {box-shadow: 0 -20px 88px rgba(0,0,0,0.3);}
+
 // Center
-.depth-center-0 {box-shadow: none;}
-.depth-center-1 {box-shadow: 0 0 1px rgba(0,0,0,0.3);}
-.depth-center-2 {box-shadow: 0 0 2px rgba(0,0,0,0.3);}
-.depth-center-4 {box-shadow: 0 0 4px rgba(0,0,0,0.3);}
-.depth-center-6 {box-shadow: 0 0 6px rgba(0,0,0,0.3);}
-.depth-center-8 {box-shadow: 0 0 4px rgba(0,0,0,0.3);}
-.depth-center-10 {box-shadow: 0 0 10px rgba(0,0,0,0.3);}
-.depth-center-12 {box-shadow: 0 0 12px rgba(0,0,0,0.3);}
-.depth-center-16 {box-shadow: 0 0 16px rgba(0,0,0,0.3);}
-.depth-center-26 {box-shadow: 0 0 26px rgba(0,0,0,0.3);}
-.depth-center-32 {box-shadow: 0 0 32px rgba(0,0,0,0.3);}
-.depth-center-48 {box-shadow: 0 0 48px rgba(0,0,0,0.3);}
-.depth-center-64 {box-shadow: 0 0 64px rgba(0,0,0,0.3);}
-.depth-center-76 {box-shadow: 0 0 76px rgba(0,0,0,0.3);}
-.depth-center-88 {box-shadow: 0 0 88px rgba(0,0,0,0.3);}
+.depth-0-center {box-shadow: none;}
+.depth-1-center {box-shadow: 0 0 1px rgba(0,0,0,0.3);}
+.depth-2-center {box-shadow: 0 0 2px rgba(0,0,0,0.3);}
+.depth-4-center {box-shadow: 0 0 4px rgba(0,0,0,0.3);}
+.depth-6-center {box-shadow: 0 0 6px rgba(0,0,0,0.3);}
+.depth-8-center {box-shadow: 0 0 4px rgba(0,0,0,0.3);}
+.depth-10-center {box-shadow: 0 0 10px rgba(0,0,0,0.3);}
+.depth-12-center {box-shadow: 0 0 12px rgba(0,0,0,0.3);}
+.depth-16-center {box-shadow: 0 0 16px rgba(0,0,0,0.3);}
+.depth-26-center {box-shadow: 0 0 26px rgba(0,0,0,0.3);}
+.depth-32-center {box-shadow: 0 0 32px rgba(0,0,0,0.3);}
+.depth-48-center {box-shadow: 0 0 48px rgba(0,0,0,0.3);}
+.depth-64-center {box-shadow: 0 0 64px rgba(0,0,0,0.3);}
+.depth-76-center {box-shadow: 0 0 76px rgba(0,0,0,0.3);}
+.depth-88-center {box-shadow: 0 0 88px rgba(0,0,0,0.3);}
+
+// Making shadow with color
+
+@each $themeName, $value in $theme-colors {
+  @if $themeName != 'link' and $themeName != 'dark' {
+    .depth-1-#{$themeName} {box-shadow: 0 1px 1px $value;}
+    .depth-2-#{$themeName} {box-shadow: 0 2px 2px $value;}
+    .depth-4-#{$themeName} {box-shadow: 0 2px 4px $value;}
+    .depth-6-#{$themeName} {box-shadow: 0 2px 6px $value;}
+    .depth-8-#{$themeName} {box-shadow: 0 2px 4px $value;}
+    .depth-10-#{$themeName} {box-shadow: 0 4px 10px $value;}
+    .depth-12-#{$themeName} {box-shadow: 0 4px 12px $value;}
+    .depth-16-#{$themeName} {box-shadow: 0 4px 16px $value;}
+    .depth-26-#{$themeName} {box-shadow: 0 10px 26px $value;}
+    .depth-32-#{$themeName} {box-shadow: 0 10px 32px $value;}
+    .depth-48-#{$themeName} {box-shadow: 0 10px 48px $value;}
+    .depth-64-#{$themeName} {box-shadow: 0 20px 64px $value;}
+    .depth-76-#{$themeName} {box-shadow: 0 20px 76px $value;}
+    .depth-88-#{$themeName} {box-shadow: 0 20px 88px $value;}
+
+    // Center
+    .depth-1-center-#{$themeName} {box-shadow: 0 0 1px $value;}
+    .depth-2-center-#{$themeName} {box-shadow: 0 0 2px $value;}
+    .depth-4-center-#{$themeName} {box-shadow: 0 0 4px $value;}
+    .depth-6-center-#{$themeName} {box-shadow: 0 0 6px $value;}
+    .depth-8-center-#{$themeName} {box-shadow: 0 0 4px $value;}
+    .depth-1-center0-#{$themeName} {box-shadow: 0 0 10px $value;}
+    .depth-1-center2-#{$themeName} {box-shadow: 0 0 12px $value;}
+    .depth-1-center6-#{$themeName} {box-shadow: 0 0 16px $value;}
+    .depth-2-center6-#{$themeName} {box-shadow: 0 0 26px $value;}
+    .depth-3-center2-#{$themeName} {box-shadow: 0 0 32px $value;}
+    .depth-4-center8-#{$themeName} {box-shadow: 0 0 48px $value;}
+    .depth-6-center4-#{$themeName} {box-shadow: 0 0 64px $value;}
+    .depth-7-center6-#{$themeName} {box-shadow: 0 0 76px $value;}
+    .depth-8-center8-#{$themeName} {box-shadow: 0 0 88px $value;}
+  }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<!--
+ Copyright (c) 2018 The Nuinalp Authors. All rights reserved.
+ Use of this source code is governed by a BSD-style license that can be
+ found in the LICENSE file.
+-->
+  <head>
+    <meta charset="utf-8">
+    <title>Botões - NUIverse</title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../dist/css/nuiverse.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/css/docs-nv.css" /> 
+    <script>
+      
+      function moveAt(pageX, pageY, fx) {
+        fx.style.left = pageX - fx.offsetWidth / 2 + 'px';
+        fx.style.top = pageY - fx.offsetHeight / 2 + 'px';
+        fx.style.transform = 'unset';
+      }
+
+      function onMouseMove(event, fx) {
+        event.preventDefault();
+        event.stopPropagation();
+        let pageX = event.pageX;
+        let pageY = event.pageY;
+        fx.style.transform = 'unset';
+        fx.style.left = (pageX - fx.offsetWidth / 2)  - event.currentTarget.offsetLeft + 'px';
+        fx.style.top = (pageY - fx.offsetHeight / 2) - event.currentTarget.offsetTop+ 'px';
+      }
+      
+      function addNuiverseHoverFX(item){
+        let fx = item.querySelector('.hover-fx-nui')
+        addFXClick(item, fx) // Prepare FX Click NUIverse
+        item.addEventListener("mouseenter", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          moveAt(e.pageX, e.pageY, fx);
+          item.addEventListener("mousemove", (e) => {onMouseMove(e, fx)});
+        });
+        item.addEventListener('mousedown', (e) => { clickFX(item, fx, e) })
+        item.addEventListener("mouseout", () => {
+          
+          item.removeEventListener("mousemove", (e) => {onMouseMove(e, fx)});
+        })
+      }
+      
+      function addFXClick (item, fx) {
+        window.requestAnimationFrame(()=> {
+          let fxLeft = fx.offsetLeft
+          let fxTop = fx.offsetTop
+          let fxClick = `<div class="button-fx-click" style="position:absolute; top: ${fxTop}px; left: ${fxLeft}px; width:0px; height:0px;"></div>`;
+          item.insertAdjacentHTML('beforeend', fxClick) 
+          var transitionEvent = checkTranstion();
+          fxClick = item.querySelector('.button-fx-click')
+          fxClick.addEventListener("animationend", () => {removeclickFX(fxClick)}, false);
+        })
+      }
+      
+      function clickFX (item, fx, e) {
+        e.preventDefault();
+        e.stopPropagation();
+        window.requestAnimationFrame(()=> {
+          let fxLeft = fx.offsetLeft
+          let fxTop = fx.offsetTop
+          let width = item.offsetWidth;
+          let fxClick = item.querySelector('.button-fx-click')
+          fxClick.style.top = fxTop + 'px';
+          fxClick.style.left = fxLeft + 'px';
+          fxClick.style.width = width + 'px';
+          fxClick.style.height = width + 'px';
+          fxClick.classList.add('anim-start')
+        })
+      }
+      
+      function removeclickFX(fx) {
+        fx.classList.remove('anim-start')
+        fx.style.width = '0px';
+        fx.style.height = '0px';
+      }
+
+      function checkTranstion () {
+        var t;
+        var el = document.createElement('fakeelement');
+        var transitions = {
+          'transition':'animationend',
+          'OTransition':'oAnimationEnd',
+          'MozTransition':'animationend',
+          'WebkitTransition':'webkitAnimationEnd'
+        }
+
+        for(t in transitions){
+            if( el.style[t] !== undefined ){
+              return transitions[t];
+            }
+        }
+      }
+      
+      document.addEventListener('DOMContentLoaded', function() {
+        let buttons = document.querySelectorAll('.button')
+        for (let items of buttons) {
+          addNuiverseHoverFX(items)
+        }
+      });
+    </script>
+    <style>
+      .hover-fx-nui{
+       background: #ddd;
+        border-radius: 50%;
+        height: 0;
+        padding-bottom: 90%;
+        width: 90%;
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+/*        background-color: rgba(0,0,0,0.5);*/
+        filter: blur(10px);
+        z-index: -1;
+        opacity: 0;
+        transition-duration: 0.5s;
+        transition-property: opacity;
+      }
+      button{
+        position: relative;
+        overflow: hidden;
+        border: 0 !important;
+      }
+      button:hover .hover-fx-nui{
+        opacity: 1;
+        transition-delay: 0s;
+      }
+    </style>
+    </head>
+  <body class="p-4">
+   <button class="button primary depth-8">
+     <span>Clique-me</span>
+     <div class="hover-fx-nui"></div>
+   </button>
+    
+    <button class="button secondary depth-8">
+     <span>Clique-me</span>
+     <div class="hover-fx-nui"></div>
+   </button>
+    
+    <button class="button warning depth-8">
+     <span>Clique-me</span>
+     <div class="hover-fx-nui"></div>
+   </button>
+    
+    <button class="button danger depth-8">
+     <span>Clique-me</span>
+     <div class="hover-fx-nui"></div>
+   </button>
+    
+    <button class="button success depth-8">
+     <span>Clique-me</span>
+     <div class="hover-fx-nui"></div>
+   </button>
+  </body>
+</html>

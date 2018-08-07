@@ -41,7 +41,7 @@
     border-bottom-left-radius: $border-radius;
     border-right: 0;
     margin: 0;
-    @extend .shadow;
+//    @extend .shadow;
 
     &:not(:first-child){
       border-radius: 0;

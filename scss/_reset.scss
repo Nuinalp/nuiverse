@@ -144,16 +144,14 @@ label {
 input[type=text], input[type=file], input[type=email], input[type=password], select, textarea{
   border-radius: $border-radius;
   border: 1px solid lighten($Dark, 60%);
-  padding: $padding-y $padding-x;
+  padding: $padding-sm-y $padding-sm-x;
   font-size: $font-size-base;
   transition: all ease 200ms;
   margin-bottom: $margin-sm-y;
   display: inline-block;
-  box-shadow: $shadowSmall;
   &:focus{
     border-color: $Primary;
     color: $Primary;
-    box-shadow: $shadowHover;
   }
 }
 
